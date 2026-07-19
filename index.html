@@ -34,7 +34,7 @@
     --ease:cubic-bezier(.2,.7,.2,1);
   }
   *{box-sizing:border-box}
-  html,body{margin:0;padding:0;background:var(--black);color:#EDEEF1;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  html,body{margin:0;padding:0;background:var(--black);color:#EDEEF1;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw}
   a{color:inherit;text-decoration:none}
   img,video,iframe{max-width:100%;display:block}
   .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
@@ -133,7 +133,7 @@
   .vitem .meta b{display:block;color:#fff;margin-top:6px;font-family:'Anton';letter-spacing:.03em;font-size:18px;text-transform:uppercase}
 
   /* TABLE */
-  table.agenda{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  table.agenda{width:100%;min-width:520px;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
   table.agenda th, table.agenda td{padding:16px 18px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
   table.agenda th{background:#101115;font-family:'Anton';color:var(--orange);letter-spacing:.1em;text-transform:uppercase;font-size:13px;font-weight:400}
   table.agenda tr:last-child td{border-bottom:0}
@@ -203,6 +203,30 @@
     .g-2, .g-3, .g-4, .strip, .vgrid, .stats, .checks{grid-template-columns:1fr}
     .hero{padding-top:56px}
     .stat b{font-size:34px}
+    .container{padding:0 16px}
+    h1{font-size:clamp(30px,10vw,54px)}
+    h2{font-size:clamp(24px,7vw,42px)}
+    .lead{font-size:15px}
+    .btn{font-size:16px;padding:14px 18px}
+    .btn.ghost{font-size:14px;padding:12px 16px}
+    .combo{padding:20px 16px}
+    .combo .math{grid-template-columns:1fr 1fr;gap:8px}
+    .combo .math .m{padding:12px 8px}
+    .combo .math .m b{font-size:22px}
+    .form-wrap{padding:20px 16px}
+    .video-card{padding:10px}
+    .calc-wrap{padding:20px 16px}
+    .calc-total{font-size:44px}
+    .calc-breakdown{grid-template-columns:1fr}
+    .household-total .val{font-size:26px}
+    .persona-tabs button{font-size:11px;padding:10px 6px}
+    .persona-tabs button small{font-size:9px}
+    .nav-row{padding:12px 16px}
+    .brand-name{font-size:16px}
+    .brand-sub{font-size:10px}
+    section{padding:56px 0}
+    .cd{min-width:64px;padding:8px 10px}
+    .cd b{font-size:22px}
   }
 
   /* Commission Table */
@@ -211,7 +235,7 @@
   .warn .icon{flex:0 0 44px;height:44px;border-radius:50%;background:rgba(239,68,68,.15);color:#EF4444;display:grid;place-items:center;font-family:'Anton';font-size:22px}
   .warn b{color:#fff;font-family:'Anton';letter-spacing:.05em;font-size:20px;text-transform:uppercase;display:block;margin-bottom:6px}
   .warn p{margin:0;color:#E3E5EA}
-  table.cms{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:18px}
+  table.cms{width:100%;min-width:520px;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:0}
   table.cms th, table.cms td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}
   table.cms th{background:#101115;font-family:'Anton';color:var(--orange);letter-spacing:.1em;text-transform:uppercase;font-size:12px;font-weight:400}
   table.cms td.num{font-family:'Anton';color:#fff;font-size:22px;letter-spacing:.02em}
@@ -251,9 +275,9 @@
   .contract-slider button.active{background:var(--orange);color:#fff;box-shadow:0 4px 12px rgba(242,103,34,.4)}
   .contract-slider button:hover:not(.active){background:#191A1E;color:#fff}
   .persona-tabs{display:flex;gap:8px;margin-bottom:20px;background:#131417;border:1px solid var(--line);border-radius:12px;padding:5px}
-  .persona-tabs button{flex:1;background:transparent;color:#C6C9D0;border:0;padding:14px 12px;font-family:'Anton';letter-spacing:.06em;text-transform:uppercase;font-size:13px;border-radius:8px;cursor:pointer;transition:all .2s}
+  .persona-tabs button{flex:1;background:transparent;color:#C6C9D0;border:0;padding:12px 8px;font-family:'Anton';letter-spacing:.05em;text-transform:uppercase;font-size:12px;border-radius:8px;cursor:pointer;transition:all .2s;line-height:1.1}
   .persona-tabs button.active{background:linear-gradient(120deg,var(--orange),#B54415);color:#fff;box-shadow:0 6px 16px rgba(242,103,34,.35)}
-  .persona-tabs button small{display:block;font-family:'Inter';font-weight:400;letter-spacing:0;text-transform:none;font-size:11px;color:inherit;opacity:.85;margin-top:2px}
+  .persona-tabs button small{display:block;font-family:'Inter';font-weight:400;letter-spacing:0;text-transform:none;font-size:10px;color:inherit;opacity:.85;margin-top:3px;line-height:1.25}
   .persona-tabs button:hover:not(.active){background:#191A1E;color:#fff}
   .household-total{background:linear-gradient(120deg,rgba(242,103,34,.14),rgba(233,178,76,.06));border:1px solid rgba(242,103,34,.5);border-radius:14px;padding:18px 20px;margin-top:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
   .household-total .lbl small{color:#F9C7A5;text-transform:uppercase;letter-spacing:.14em;font-size:11px;display:block;margin-bottom:2px}
@@ -261,7 +285,10 @@
   .household-total .val{font-family:'Anton';color:#fff;font-size:34px;letter-spacing:.02em}
 
   /* FE/IUL Transparency Grid */
-  table.fe{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:14px}
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:14px;border-radius:14px;position:relative}
+  .table-scroll::after{content:"";position:absolute;top:0;right:0;bottom:0;width:24px;background:linear-gradient(to right,transparent,rgba(11,11,12,.9));pointer-events:none;border-radius:0 14px 14px 0}
+  @media (min-width:721px){.table-scroll::after{display:none}}
+  table.fe{width:100%;min-width:640px;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:0}
   table.fe th, table.fe td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
   table.fe th{background:#101115;font-family:'Anton';color:var(--orange);letter-spacing:.1em;text-transform:uppercase;font-size:12px;font-weight:400}
   table.fe td.pct{font-family:'Anton';color:#fff;font-size:20px;letter-spacing:.02em;white-space:nowrap}
@@ -284,7 +311,7 @@
   @media (max-width: 720px){.combo .math{grid-template-columns:repeat(2,1fr)}}
 
   /* Marquee */
-  .marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0A0A0B;padding:14px 0}
+  .marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0A0A0B;padding:14px 0;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}
   .marquee-track{display:flex;gap:44px;animation:scroll 32s linear infinite;font-family:'Anton';letter-spacing:.08em;color:#C7CAD1;text-transform:uppercase;font-size:14px}
   .marquee-track span{white-space:nowrap;display:inline-flex;align-items:center;gap:44px}
   .marquee-track em{color:var(--orange);font-style:normal;margin-right:44px}
@@ -398,7 +425,7 @@
       <p class="lead">One hour. Zero fluff. The exact system our brokers ran to have their best AEP ever while everyone else panicked.</p>
     </div>
 
-    <table class="agenda" aria-label="Webinar Agenda">
+    <div class="table-scroll"><table class="agenda" aria-label="Webinar Agenda">
       <thead>
         <tr><th style="width:80px">#</th><th>Segment</th><th>What You Walk Away With</th></tr>
       </thead>
@@ -411,7 +438,7 @@
         <tr><td class="num">06</td><td><b>The Blueprint Timeline</b></td><td>Months-in-advance action plan so you show up to AEP with a system, not confusion.</td></tr>
         <tr><td class="num">07</td><td><b>Live Q&amp;A with Bill</b></td><td>Bring your contract questions, your production goals, your state, your carriers. Real numbers, no pitch.</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 </section>
 
@@ -510,7 +537,7 @@
     </div>
 
     <h3 style="font-family:'Anton';letter-spacing:.05em;color:#fff;text-transform:uppercase;font-size:18px;margin:26px 0 10px">CY 2027 Maximum Broker Commissions</h3>
-    <table class="cms" aria-label="CMS 2027 Maximum Fair Market Value Commissions">
+    <div class="table-scroll"><table class="cms" aria-label="CMS 2027 Maximum Fair Market Value Commissions">
       <thead>
         <tr><th>Product / Region</th><th>Initial Enrollment</th><th>Renewal</th><th>Change vs 2026</th></tr>
       </thead>
@@ -521,7 +548,7 @@
         <tr><td><b style="color:#fff">Referral Fees — MA Plans</b></td><td class="num">$100</td><td class="num">—</td><td class="diff">Held</td></tr>
         <tr><td><b style="color:#fff">Referral Fees — PDP</b></td><td class="num">$25</td><td class="num">—</td><td class="diff">Held</td></tr>
       </tbody>
-    </table>
+    </table></div>
 
     <div class="grid g-2" style="margin-top:22px">
       <div class="card">
@@ -725,7 +752,7 @@
     </div>
 
     <h3 style="font-family:'Anton';letter-spacing:.05em;color:#fff;text-transform:uppercase;font-size:18px;margin:8px 0 10px">Final Expense First-Year Commission (by contract type)</h3>
-    <table class="fe" aria-label="Final Expense Commission by Contract Type">
+    <div class="table-scroll"><table class="fe" aria-label="Final Expense Commission by Contract Type">
       <thead>
         <tr><th>Contract Type</th><th>First-Year Commission</th><th>Renewal (Yrs 2–10)</th><th>Advance</th><th>You Own The Book?</th></tr>
       </thead>
@@ -736,10 +763,10 @@
         <tr class="divine-row"><td><span class="tag d">Divine Insurance Group</span> Broker-direct-to-carrier</td><td class="pct divine">90–145%</td><td>Full carrier schedule</td><td class="pct divine" style="font-size:14px">9-month advance</td><td>YES — in writing</td></tr>
         <tr><td><span class="tag s">Top-Producer / Negotiated</span> Rare, requires 15+ policies/wk</td><td class="pct">115–130%</td><td>7–10%</td><td>9-mo (75% advance rate typical)</td><td>Yes</td></tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h3 style="font-family:'Anton';letter-spacing:.05em;color:#fff;text-transform:uppercase;font-size:18px;margin:26px 0 10px">Popular FE Carrier Grids (Public 2025–2026 References)</h3>
-    <table class="fe" aria-label="Final Expense Carriers Commission Grid">
+    <div class="table-scroll"><table class="fe" aria-label="Final Expense Carriers Commission Grid">
       <thead>
         <tr><th>Carrier / Product</th><th>Street</th><th>Divine Broker Pays Up To</th><th>Renewals</th></tr>
       </thead>
@@ -752,7 +779,7 @@
         <tr><td><b style="color:#fff">SBLI</b> Living Legacy</td><td class="pct">130%</td><td class="pct divine">Contract to street</td><td>~7.75%</td></tr>
         <tr><td><b style="color:#fff">Royal Neighbors</b> Level FE</td><td class="pct">120%</td><td class="pct divine">Contract to street</td><td>~7.25%</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p class="src" style="margin-bottom:26px">
       Public references verifying contract-level ranges above:
       <a href="https://www.insurancemarketingco.com/blog/final-expense-commission-levels-for-agents" target="_blank" rel="noopener">Insurance Marketing Co</a> ·
@@ -765,7 +792,7 @@
     </p>
 
     <h3 style="font-family:'Anton';letter-spacing:.05em;color:#fff;text-transform:uppercase;font-size:18px;margin:26px 0 10px">Hospital Indemnity + Cancer / CI — The Senior Cross-Sell Layer</h3>
-    <table class="fe" aria-label="Hospital Indemnity and Cancer Commission Grid">
+    <div class="table-scroll"><table class="fe" aria-label="Hospital Indemnity and Cancer Commission Grid">
       <thead>
         <tr><th>Product</th><th>Avg Client Premium</th><th>First-Year Commission</th><th>Per-Sale Comp (est.)</th></tr>
       </thead>
@@ -775,7 +802,7 @@
         <tr><td><b style="color:#fff">Accident</b> — Voluntary worksite/senior</td><td>$10–$30 / mo</td><td class="pct">35–60% FYC</td><td class="pct">$50–$200</td></tr>
         <tr><td><b style="color:#fff">Dental / Vision / Hearing (DVH)</b></td><td>$20–$45 / mo</td><td class="pct">20–35% FYC</td><td class="pct">$50–$150</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p class="src" style="margin-bottom:26px">
       <b style="color:#fff;text-transform:uppercase;letter-spacing:.1em;font-family:'Anton';font-size:12px">Sources:</b>
       <a href="https://healthnewsreporting.com/schemes-and-policies/hospital-indemnity-health-insurance-agent-commission-chart-2025/" target="_blank" rel="noopener">Hospital Indemnity Commission Chart 2025</a> ·
@@ -787,7 +814,7 @@
     </p>
 
     <h3 style="font-family:'Anton';letter-spacing:.05em;color:#fff;text-transform:uppercase;font-size:18px;margin:26px 0 10px">IUL Commissions — What A Real IUL Contract Looks Like <span style="color:var(--gray);font-size:12px;letter-spacing:.05em;text-transform:none;font-family:'Inter'">· sold to adult child / spouse under 60, not the Medicare client</span></h3>
-    <table class="fe" aria-label="IUL Commission Contract Grid">
+    <div class="table-scroll"><table class="fe" aria-label="IUL Commission Contract Grid">
       <thead>
         <tr><th>Contract Type</th><th>Target Premium Commission</th><th>Excess Premium</th><th>Notes</th></tr>
       </thead>
@@ -797,7 +824,7 @@
         <tr class="divine-row"><td><span class="tag d">Divine Insurance Group</span> Direct-to-carrier IUL</td><td class="pct divine">80–130%</td><td class="pct divine" style="font-size:14px">3–5%+</td><td>Full target commission on Transamerica FFIUL II — latest cap 7.25%. Non-exclusive. Keep any existing carrier numbers.</td></tr>
         <tr><td><span class="tag s">Whole Life / Life 150%</span> Divine legacy contract</td><td class="pct divine">150%</td><td>Carrier schedule</td><td>9-mo advance; final 25% paid months 10–12.</td></tr>
       </tbody>
-    </table>
+    </table></div>
 
     <!-- CROSS-SELL COMBO CARD -->
     <div class="combo">
