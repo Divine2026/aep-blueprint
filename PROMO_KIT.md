@@ -5,7 +5,7 @@
 **Format:** Free live Zoom masterclass · Replay for registrants
 
 **Primary links (use everywhere):**
-- Landing page (permanent): `https://billfegginsacademy.pplx.app`
+- Landing page (permanent): `https://divine2026.github.io/aep-blueprint`
 - Eventbrite (registration): `https://www.eventbrite.com/e/the-aep-blueprint-bill-feggins-academy-broker-masterclass-tickets-1994513305989`
 - Direct Zoom registration: `https://us06web.zoom.us/meeting/register/9agYxgtDQGC23z0HshMIqQ`
 - Divine YouTube: `https://www.youtube.com/@divineinsurancegroup`
@@ -61,7 +61,7 @@ I've written 1,500+ Medicare Advantage applications and 1,000+ Final Expense cas
 
 📅 Monday, July 27 · 7 PM ET · Live on Zoom · 60 minutes · Replay for registrants
 
-👉 Reserve your free seat: https://billfegginsacademy.pplx.app?utm_source=facebook&utm_medium=organic&utm_campaign=aep-blueprint
+👉 Reserve your free seat: https://divine2026.github.io/aep-blueprint?utm_source=facebook&utm_medium=organic&utm_campaign=aep-blueprint
 
 Tag an agent who needs to stop renting their career. 👇
 
@@ -98,7 +98,7 @@ Reserve your free seat now.
 **Headline:** Free Broker Masterclass · July 27
 **Description:** Own your book. Direct-to-carrier. 80–155% contracts. 9-mo advances.
 **CTA button:** Sign Up
-**Link:** https://billfegginsacademy.pplx.app?utm_source=facebook&utm_medium=paid&utm_campaign=aep-blueprint
+**Link:** https://divine2026.github.io/aep-blueprint?utm_source=facebook&utm_medium=paid&utm_campaign=aep-blueprint
 
 **⚠️ Meta Special Ad Category:** Because this ad promotes insurance career/agent recruitment, in Ads Manager under "Special Ad Categories" you may need to select "Employment" (or the Housing/Employment/Credit toggle for the U.S.). This restricts age/gender/geo targeting. Talk to Meta about this before launching.
 
@@ -161,7 +161,7 @@ I've written 1,500+ Medicare Advantage applications and 1,000+ Final Expense cas
 
 Free. Live on Zoom. Replay for registrants.
 
-Reserve your seat 👉 https://billfegginsacademy.pplx.app?utm_source=linkedin&utm_medium=organic&utm_campaign=aep-blueprint
+Reserve your seat 👉 https://divine2026.github.io/aep-blueprint?utm_source=linkedin&utm_medium=organic&utm_campaign=aep-blueprint
 
 If you're a licensed agent — or you know one who's grinding without a system — tag them in the comments.
 
@@ -190,7 +190,7 @@ We're breaking down the exact system our brokers ran to have their best AEP ever
 ✅ Direct-to-carrier vs LOA contracts (read the real grids)
 ✅ Live Q&A with Bill
 
-Reserve free 👉 https://billfegginsacademy.pplx.app?utm_source=youtube&utm_medium=community&utm_campaign=aep-blueprint
+Reserve free 👉 https://divine2026.github.io/aep-blueprint?utm_source=youtube&utm_medium=community&utm_campaign=aep-blueprint
 
 Comment your state 👇 so I can prep answers to your specific carrier questions live.
 
@@ -237,7 +237,7 @@ Here's what agents get with Divine that most FMOs won't touch:
 
 Reserve your free seat 👉
 
-https://billfegginsacademy.pplx.app?utm_source=x&utm_medium=organic&utm_campaign=aep-blueprint
+https://divine2026.github.io/aep-blueprint?utm_source=x&utm_medium=organic&utm_campaign=aep-blueprint
 
 If you're a licensed L&H agent — or know one grinding without a system — RT this.
 
@@ -292,7 +292,7 @@ Most agents miss these moments because their FMO gives them zero real help. Stuc
 
 **Reserve your free seat here 👇**
 
-👉 https://billfegginsacademy.pplx.app?utm_source=email&utm_medium=broadcast&utm_campaign=aep-blueprint
+👉 https://divine2026.github.io/aep-blueprint?utm_source=email&utm_medium=broadcast&utm_campaign=aep-blueprint
 
 Free. Live on Zoom. Replay for registrants only.
 
@@ -316,11 +316,11 @@ P.S. If you already know an agent who's grinding without a system, forward this.
 
 **Blast 1 — Announcement (send 5–7 days out):**
 
-Bill Feggins here. Free 60-min broker masterclass Mon July 27, 7 PM ET. The AEP Blueprint — own your book, direct-to-carrier, real strategy. Reserve: https://billfegginsacademy.pplx.app Reply STOP to opt out.
+Bill Feggins here. Free 60-min broker masterclass Mon July 27, 7 PM ET. The AEP Blueprint — own your book, direct-to-carrier, real strategy. Reserve: https://divine2026.github.io/aep-blueprint Reply STOP to opt out.
 
 **Blast 2 — 24 hours before:**
 
-Tomorrow 7 PM ET — The AEP Blueprint masterclass live. Free. 60 min. Own your book. Save your seat: https://billfegginsacademy.pplx.app Reply STOP to opt out.
+Tomorrow 7 PM ET — The AEP Blueprint masterclass live. Free. 60 min. Own your book. Save your seat: https://divine2026.github.io/aep-blueprint Reply STOP to opt out.
 
 **Blast 3 — 1 hour before (registrants only):**
 
@@ -401,7 +401,7 @@ Send:
 3. Name: The AEP Blueprint — Bill Feggins Academy Broker Masterclass
 4. Date/time: Monday, July 27, 2026 · 7:00 PM ET
 5. Details: paste the LinkedIn post copy above
-6. External ticket URL: `https://billfegginsacademy.pplx.app`
+6. External ticket URL: `https://divine2026.github.io/aep-blueprint`
 7. Cover image: Bill's headshot or a bold "AEP BLUEPRINT · JULY 27" graphic
 8. Publish and pin to top of your Facebook page
 
