@@ -68,7 +68,9 @@
     radial-gradient(900px 400px at 100% 0%, rgba(233,178,76,.10), transparent 60%),
     linear-gradient(#0B0B0C,#0B0B0C)}
   .hero .stripe{position:absolute;inset:auto 0 0 0;height:6px;background:linear-gradient(90deg,var(--orange),#B54415,var(--gold),var(--orange));opacity:.7}
-  .hero-grid{display:grid;grid-template-columns:1.15fr .95fr;gap:56px;align-items:center}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center;max-width:920px;margin:0 auto;text-align:center}
+  .hero-grid .badges, .hero-grid .cta-row{justify-content:center}
+  .hero-grid .meta{justify-content:center}
   .hero .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px}
   .hero h1 span{color:var(--orange)}
   .hero .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;align-items:center}
@@ -190,7 +192,7 @@
 
   /* Responsive */
   @media (max-width: 960px){
-    .hero-grid, .host{grid-template-columns:1fr}
+    .host{grid-template-columns:1fr}
     .g-3, .g-4, .strip, .vgrid, .stats, .checks{grid-template-columns:1fr 1fr}
     .row{grid-template-columns:1fr}
     header .nav-cta .btn.small{display:none}
@@ -344,15 +346,7 @@
       </div>
     </div>
 
-    <div class="video-card">
-      <div class="thumb">
-        <iframe src="https://www.youtube.com/embed/3bYJIEWR6aw?rel=0&modestbranding=1" title="Bill Feggins — Biography of a Champion · Lifetime Legacy Award" loading="lazy" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-      </div>
-      <div class="caption">
-        <small>Watch · 2 min preview</small>
-        <a href="https://www.youtube.com/@divineinsurancegroup" target="_blank" rel="noopener" class="btn ghost small">Full YouTube Channel →</a>
-      </div>
-    </div>
+<!-- Hero video placeholder — Bill will provide the new video and I'll drop it in here -->
   </div>
   <div class="stripe"></div>
 </section>
