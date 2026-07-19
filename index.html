@@ -1,0 +1,1156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>The AEP Blueprint — Bill Feggins Academy | Divine Insurance Group</title>
+<meta name="description" content="Free 1-hour Medicare + Final Expense broker masterclass with Bill Feggins. Own your book. Direct-to-carrier contracts. Real grassroots strategy from a 1,500+ MAPD / 1,000+ FE producer." />
+<meta property="og:title" content="The AEP Blueprint — Bill Feggins Academy" />
+<meta property="og:description" content="Free 1-hour broker masterclass. Own your book. Direct-to-carrier. 80–155% contracts. 9-month advances." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --orange:#F26722;      /* Divine Insurance Group orange */
+    --orange-hot:#FF7A2E;
+    --black:#0B0B0C;
+    --ink:#141416;
+    --silver:#C9CCD1;
+    --gray:#8A8F98;
+    --line:rgba(255,255,255,0.10);
+    --card:#131417;
+    --card-2:#191A1E;
+    --gold:#E9B24C;
+    --white:#FFFFFF;
+    --success:#10B981;
+    --danger:#EF4444;
+    --radius:14px;
+    --shadow:0 10px 30px rgba(0,0,0,0.35);
+    --maxw:1180px;
+    --ease:cubic-bezier(.2,.7,.2,1);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--black);color:#EDEEF1;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img,video,iframe{max-width:100%;display:block}
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  .eyebrow{display:inline-block;font-family:'Anton',Impact,sans-serif;letter-spacing:.16em;color:var(--orange);font-size:14px;text-transform:uppercase;margin-bottom:14px}
+  h1,h2,h3,h4{font-family:'Anton',Impact,sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.02;margin:0 0 14px}
+  h1{font-size:clamp(38px,6.4vw,84px);text-transform:uppercase}
+  h2{font-size:clamp(28px,4vw,52px);text-transform:uppercase}
+  h3{font-size:clamp(20px,2.2vw,28px);text-transform:uppercase;letter-spacing:.03em}
+  p{margin:0 0 14px;color:#D5D7DC}
+  .lead{font-size:clamp(17px,1.6vw,20px);color:#E7E8EC}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--orange);color:#fff;font-family:'Anton',Impact,sans-serif;letter-spacing:.08em;font-size:20px;padding:18px 28px;border-radius:12px;text-transform:uppercase;transition:transform .2s var(--ease), background .2s var(--ease), box-shadow .2s var(--ease);box-shadow:0 8px 22px rgba(242,103,34,.35);cursor:pointer;border:0}
+  .btn:hover{background:var(--orange-hot);transform:translateY(-1px);box-shadow:0 12px 28px rgba(242,103,34,.45)}
+  .btn.ghost{background:transparent;color:#fff;border:1px solid var(--line);box-shadow:none;font-size:16px;padding:14px 22px}
+  .btn.ghost:hover{background:#191A1E}
+  .btn.small{font-size:15px;padding:12px 18px}
+  .kicker{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#C7CAD1;background:rgba(255,255,255,.03)}
+  .kicker .dot{width:8px;height:8px;background:var(--orange);border-radius:50%;box-shadow:0 0 0 4px rgba(242,103,34,.2)}
+
+  /* NAV */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(11,11,12,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-row{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:var(--maxw);margin:0 auto}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand-mark{width:42px;height:42px;border-radius:10px;background:linear-gradient(160deg,var(--orange),#B54415);display:grid;place-items:center;color:#fff;font-family:'Anton';font-size:22px;box-shadow:0 6px 18px rgba(242,103,34,.35)}
+  .brand-name{font-family:'Anton';letter-spacing:.06em;font-size:18px}
+  .brand-sub{font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:.14em}
+  .nav-cta{display:flex;gap:10px;align-items:center}
+
+  /* HERO */
+  .hero{position:relative;overflow:hidden;padding:80px 0 60px;background:
+    radial-gradient(1200px 500px at 15% -10%, rgba(242,103,34,.22), transparent 60%),
+    radial-gradient(900px 400px at 100% 0%, rgba(233,178,76,.10), transparent 60%),
+    linear-gradient(#0B0B0C,#0B0B0C)}
+  .hero .stripe{position:absolute;inset:auto 0 0 0;height:6px;background:linear-gradient(90deg,var(--orange),#B54415,var(--gold),var(--orange));opacity:.7}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .95fr;gap:56px;align-items:center}
+  .hero .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px}
+  .hero h1 span{color:var(--orange)}
+  .hero .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;align-items:center}
+  .hero .meta{margin-top:22px;color:#B7BAC1;font-size:14px;display:flex;flex-wrap:wrap;gap:18px}
+  .hero .meta b{color:#fff}
+  .video-card{background:#0F1013;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow)}
+  .video-card .thumb{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/9;background:#000}
+  .video-card iframe{width:100%;height:100%;border:0}
+  .caption{display:flex;justify-content:space-between;align-items:center;padding:12px 6px 2px}
+  .caption small{color:var(--gray);text-transform:uppercase;letter-spacing:.14em;font-size:11px}
+
+  /* COUNTDOWN */
+  .countdown{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+  .cd{background:#141519;border:1px solid var(--line);padding:10px 14px;border-radius:10px;min-width:78px;text-align:center}
+  .cd b{display:block;font-family:'Anton';font-size:28px;color:#fff;line-height:1}
+  .cd small{color:var(--gray);text-transform:uppercase;letter-spacing:.14em;font-size:10px}
+
+  /* SECTIONS */
+  section{padding:80px 0;position:relative}
+  section.dark{background:#0A0A0B}
+  section.card-band{background:linear-gradient(#0E0F12,#0B0B0C)}
+  .section-head{max-width:820px;margin:0 auto 44px;text-align:center}
+  .grid{display:grid;gap:20px}
+  .g-2{grid-template-columns:repeat(2,1fr)}
+  .g-3{grid-template-columns:repeat(3,1fr)}
+  .g-4{grid-template-columns:repeat(4,1fr)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:transform .25s var(--ease), border-color .25s var(--ease)}
+  .card:hover{transform:translateY(-3px);border-color:rgba(242,103,34,.5)}
+  .card h3{margin-bottom:8px}
+  .card .num{font-family:'Anton';color:var(--orange);font-size:14px;letter-spacing:.2em;margin-bottom:8px;display:block}
+  .card ul{margin:8px 0 0;padding-left:18px;color:#C6C9D0}
+  .card ul li{margin:6px 0}
+
+  /* PROBLEM STRIP */
+  .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .strip .cell{background:#0F1013;border:1px solid var(--line);border-radius:12px;padding:18px}
+  .strip .cell b{color:var(--orange);font-family:'Anton';letter-spacing:.05em;font-size:15px;display:block;margin-bottom:6px;text-transform:uppercase}
+  .strip .cell p{margin:0;color:#B9BCC3;font-size:14px}
+
+  /* CHECK LIST */
+  .checks{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 22px}
+  .checks li{display:flex;gap:12px;align-items:flex-start;list-style:none;padding:0}
+  .checks li .ck{flex:0 0 24px;height:24px;border-radius:50%;background:rgba(16,185,129,.15);color:var(--success);display:grid;place-items:center;font-weight:700}
+  .checks li b{color:#fff}
+
+  /* CREDIBILITY */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:24px 0}
+  .stat{background:#0F1013;border:1px solid var(--line);border-radius:12px;padding:22px;text-align:center}
+  .stat b{display:block;font-family:'Anton';font-size:44px;color:#fff;line-height:1;margin-bottom:6px}
+  .stat span{color:var(--gray);text-transform:uppercase;letter-spacing:.14em;font-size:11px}
+  .stat b em{color:var(--orange);font-style:normal}
+
+  /* VIDEO GRID */
+  .vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .vitem{background:#0F1013;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .vitem .thumb{aspect-ratio:16/9;background:#000;position:relative}
+  .vitem iframe{width:100%;height:100%;border:0}
+  .vitem .meta{padding:14px 16px}
+  .vitem .meta small{color:var(--gray);text-transform:uppercase;letter-spacing:.14em;font-size:11px}
+  .vitem .meta b{display:block;color:#fff;margin-top:6px;font-family:'Anton';letter-spacing:.03em;font-size:18px;text-transform:uppercase}
+
+  /* TABLE */
+  table.agenda{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  table.agenda th, table.agenda td{padding:16px 18px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  table.agenda th{background:#101115;font-family:'Anton';color:var(--orange);letter-spacing:.1em;text-transform:uppercase;font-size:13px;font-weight:400}
+  table.agenda tr:last-child td{border-bottom:0}
+  table.agenda td.num{font-family:'Anton';color:var(--orange);width:64px;font-size:20px}
+
+  /* CTA BAND */
+  .cta-band{background:linear-gradient(120deg,#F26722 0%,#B54415 100%);padding:64px 0;text-align:center;position:relative;overflow:hidden}
+  .cta-band h2{color:#fff}
+  .cta-band p{color:#FFEEDF;max-width:720px;margin:0 auto 22px}
+  .cta-band .btn{background:#0B0B0C;color:#fff;box-shadow:0 10px 26px rgba(0,0,0,.4)}
+  .cta-band .btn:hover{background:#1a1a1c}
+
+  /* FORM */
+  .form-wrap{max-width:640px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+  .form-wrap h2{text-align:center}
+  .form-wrap p.small{text-align:center;color:#B7BAC1;font-size:14px;margin-bottom:20px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .field{display:flex;flex-direction:column;margin-bottom:12px}
+  .field label{font-size:12px;color:#B7BAC1;text-transform:uppercase;letter-spacing:.12em;margin-bottom:6px}
+  .field input, .field select, .field textarea{background:#0C0D10;color:#fff;border:1px solid #26282E;border-radius:10px;padding:12px 14px;font-size:15px;font-family:inherit;outline:none;transition:border-color .15s}
+  .field input:focus, .field select:focus, .field textarea:focus{border-color:var(--orange)}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:#9DA1A9;margin-top:8px}
+  .consent input{margin-top:3px}
+  .form-wrap .btn{width:100%;margin-top:8px}
+  .form-note{font-size:11px;color:#7D818A;margin-top:14px;text-align:center;line-height:1.5}
+
+  /* SPEAKER / HOST */
+  .host{display:grid;grid-template-columns:1.05fr 1.4fr;gap:36px;align-items:center}
+  .host .photo{aspect-ratio:4/5;border-radius:20px;overflow:hidden;background:#111;border:1px solid var(--line);display:grid;place-items:center;position:relative}
+  .host .photo .initials{font-family:'Anton';font-size:120px;color:var(--orange);letter-spacing:.05em}
+  .host .photo .overlay{position:absolute;inset:auto 0 0 0;padding:14px 18px;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent);color:#fff}
+  .host .photo .overlay b{font-family:'Anton';letter-spacing:.05em}
+  .host .credentials{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .cred{background:#141519;border:1px solid var(--line);color:#DDE1E6;padding:6px 10px;border-radius:999px;font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+
+  /* FAQ */
+  details.faq{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:10px}
+  details.faq summary{cursor:pointer;font-family:'Anton';letter-spacing:.05em;font-size:18px;color:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;text-transform:uppercase}
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary::after{content:"+";color:var(--orange);font-size:24px;line-height:1}
+  details.faq[open] summary::after{content:"–"}
+  details.faq p{margin-top:10px;color:#C6C9D0}
+
+  /* FOOTER */
+  footer{background:#08090A;border-top:1px solid var(--line);padding:44px 0 24px;color:#8A8F98;font-size:14px}
+  footer .row-f{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  footer a{color:#C7CAD1}
+  footer a:hover{color:var(--orange)}
+  footer .social{display:flex;gap:10px}
+  footer .social a{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:8px}
+  .disclosure{font-size:12px;color:#6C7079;line-height:1.6;margin-top:22px;padding-top:22px;border-top:1px solid var(--line)}
+
+  /* Sticky mobile CTA */
+  .sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;padding:10px 12px;background:rgba(11,11,12,.94);border-top:1px solid var(--line);z-index:60}
+  .sticky-cta .btn{width:100%;font-size:16px;padding:14px 16px}
+
+  /* Responsive */
+  @media (max-width: 960px){
+    .hero-grid, .host{grid-template-columns:1fr}
+    .g-3, .g-4, .strip, .vgrid, .stats, .checks{grid-template-columns:1fr 1fr}
+    .row{grid-template-columns:1fr}
+    header .nav-cta .btn.small{display:none}
+    .sticky-cta{display:block}
+    body{padding-bottom:76px}
+  }
+  @media (max-width: 620px){
+    .g-2, .g-3, .g-4, .strip, .vgrid, .stats, .checks{grid-template-columns:1fr}
+    .hero{padding-top:56px}
+    .stat b{font-size:34px}
+  }
+
+  /* Commission Table */
+  .cms-band{background:linear-gradient(#0A0A0B,#0E0F12);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .warn{background:linear-gradient(120deg,rgba(239,68,68,.10),rgba(239,68,68,.03));border:1px solid rgba(239,68,68,.35);border-radius:14px;padding:22px 24px;margin:0 0 28px;display:flex;gap:16px;align-items:flex-start}
+  .warn .icon{flex:0 0 44px;height:44px;border-radius:50%;background:rgba(239,68,68,.15);color:#EF4444;display:grid;place-items:center;font-family:'Anton';font-size:22px}
+  .warn b{color:#fff;font-family:'Anton';letter-spacing:.05em;font-size:20px;text-transform:uppercase;display:block;margin-bottom:6px}
+  .warn p{margin:0;color:#E3E5EA}
+  table.cms{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:18px}
+  table.cms th, table.cms td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}
+  table.cms th{background:#101115;font-family:'Anton';color:var(--orange);letter-spacing:.1em;text-transform:uppercase;font-size:12px;font-weight:400}
+  table.cms td.num{font-family:'Anton';color:#fff;font-size:22px;letter-spacing:.02em}
+  table.cms td.diff{color:var(--success);font-family:'Anton';letter-spacing:.05em}
+  table.cms tr:last-child td{border-bottom:0}
+  table.cms tr.hilite td{background:rgba(242,103,34,.06)}
+  .src{font-size:12px;color:#8A8F98;line-height:1.6;margin-top:10px}
+  .src a{color:#C7CAD1;text-decoration:underline;text-decoration-color:rgba(255,255,255,.2)}
+  .src a:hover{color:var(--orange);text-decoration-color:var(--orange)}
+
+  /* Broker Income Calculator */
+  .calc-wrap{background:linear-gradient(160deg,#0F1013 0%,#0B0B0C 100%);border:1px solid rgba(242,103,34,.35);border-radius:20px;padding:34px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+  .calc-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:36px;align-items:start}
+  @media (max-width: 900px){.calc-grid{grid-template-columns:1fr}}
+  .calc-inputs h3{color:#fff}
+  .calc-inputs .field{margin-bottom:14px}
+  .calc-inputs input[type=range]{width:100%;accent-color:var(--orange);height:6px}
+  .calc-inputs .range-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+  .calc-inputs .range-row label{font-size:12px;color:#B7BAC1;text-transform:uppercase;letter-spacing:.12em;margin:0}
+  .calc-inputs .range-row b{font-family:'Anton';color:var(--orange);font-size:22px;letter-spacing:.02em}
+  .calc-inputs select{width:100%}
+  .calc-out{background:#0B0B0C;border:1px solid var(--line);border-radius:16px;padding:24px}
+  .calc-out .headline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+  .calc-out .headline small{color:var(--gray);text-transform:uppercase;letter-spacing:.14em;font-size:11px}
+  .calc-total{font-family:'Anton';font-size:clamp(46px,6vw,72px);color:var(--orange);line-height:1;margin:6px 0 2px}
+  .calc-sub{color:#B7BAC1;font-size:13px;margin-bottom:18px}
+  .calc-breakdown{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}
+  .calc-breakdown .r{background:#131417;border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;font-size:13px}
+  .calc-breakdown .r small{color:var(--gray);text-transform:uppercase;letter-spacing:.1em;font-size:10px;display:block;margin-bottom:2px}
+  .calc-breakdown .r b{color:#fff;font-family:'Anton';font-size:20px;letter-spacing:.02em}
+  .calc-vs{background:linear-gradient(120deg,rgba(239,68,68,.10),rgba(239,68,68,.02));border:1px solid rgba(239,68,68,.35);border-radius:12px;padding:14px 16px;margin-top:12px}
+  .calc-vs b{color:#EF4444;font-family:'Anton';letter-spacing:.05em;font-size:14px;text-transform:uppercase;display:block;margin-bottom:4px}
+  .calc-vs p{margin:0;color:#DDE1E6;font-size:13px}
+  .calc-vs .delta{color:var(--orange);font-family:'Anton';font-size:22px}
+  .contract-slider{display:flex;gap:6px;background:#131417;border:1px solid var(--line);border-radius:10px;padding:4px}
+  .contract-slider button{flex:1;background:transparent;color:#C6C9D0;border:0;padding:10px 8px;font-family:'Anton';letter-spacing:.05em;text-transform:uppercase;font-size:12px;border-radius:8px;cursor:pointer;transition:all .2s}
+  .contract-slider button.active{background:var(--orange);color:#fff;box-shadow:0 4px 12px rgba(242,103,34,.4)}
+  .contract-slider button:hover:not(.active){background:#191A1E;color:#fff}
+  .persona-tabs{display:flex;gap:8px;margin-bottom:20px;background:#131417;border:1px solid var(--line);border-radius:12px;padding:5px}
+  .persona-tabs button{flex:1;background:transparent;color:#C6C9D0;border:0;padding:14px 12px;font-family:'Anton';letter-spacing:.06em;text-transform:uppercase;font-size:13px;border-radius:8px;cursor:pointer;transition:all .2s}
+  .persona-tabs button.active{background:linear-gradient(120deg,var(--orange),#B54415);color:#fff;box-shadow:0 6px 16px rgba(242,103,34,.35)}
+  .persona-tabs button small{display:block;font-family:'Inter';font-weight:400;letter-spacing:0;text-transform:none;font-size:11px;color:inherit;opacity:.85;margin-top:2px}
+  .persona-tabs button:hover:not(.active){background:#191A1E;color:#fff}
+  .household-total{background:linear-gradient(120deg,rgba(242,103,34,.14),rgba(233,178,76,.06));border:1px solid rgba(242,103,34,.5);border-radius:14px;padding:18px 20px;margin-top:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .household-total .lbl small{color:#F9C7A5;text-transform:uppercase;letter-spacing:.14em;font-size:11px;display:block;margin-bottom:2px}
+  .household-total .lbl b{color:#fff;font-family:'Anton';font-size:20px;letter-spacing:.02em;display:block}
+  .household-total .val{font-family:'Anton';color:#fff;font-size:34px;letter-spacing:.02em}
+
+  /* FE/IUL Transparency Grid */
+  table.fe{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:14px}
+  table.fe th, table.fe td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
+  table.fe th{background:#101115;font-family:'Anton';color:var(--orange);letter-spacing:.1em;text-transform:uppercase;font-size:12px;font-weight:400}
+  table.fe td.pct{font-family:'Anton';color:#fff;font-size:20px;letter-spacing:.02em;white-space:nowrap}
+  table.fe td.pct.divine{color:var(--orange)}
+  table.fe td.pct.captive{color:#EF4444}
+  table.fe tr:last-child td{border-bottom:0}
+  table.fe tr.divine-row td{background:rgba(242,103,34,.08)}
+  table.fe .tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-family:'Anton'}
+  table.fe .tag.d{background:rgba(242,103,34,.2);color:var(--orange)}
+  table.fe .tag.s{background:rgba(255,255,255,.08);color:#C6C9D0}
+  table.fe .tag.c{background:rgba(239,68,68,.15);color:#EF4444}
+  .combo{background:linear-gradient(120deg,rgba(242,103,34,.08),rgba(233,178,76,.03));border:1px solid rgba(242,103,34,.35);border-radius:16px;padding:28px;margin-top:26px}
+  .combo h3{color:#fff}
+  .combo .math{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+  .combo .math .m{background:#0F1013;border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+  .combo .math .m b{display:block;font-family:'Anton';font-size:26px;color:var(--orange);margin-bottom:4px}
+  .combo .math .m small{color:var(--gray);text-transform:uppercase;letter-spacing:.12em;font-size:10px;display:block}
+  .combo .math .total{background:linear-gradient(120deg,var(--orange),#B54415);border-color:transparent}
+  .combo .math .total b, .combo .math .total small{color:#fff}
+  @media (max-width: 720px){.combo .math{grid-template-columns:repeat(2,1fr)}}
+
+  /* Marquee */
+  .marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0A0A0B;padding:14px 0}
+  .marquee-track{display:flex;gap:44px;animation:scroll 32s linear infinite;font-family:'Anton';letter-spacing:.08em;color:#C7CAD1;text-transform:uppercase;font-size:14px}
+  .marquee-track span{white-space:nowrap;display:inline-flex;align-items:center;gap:44px}
+  .marquee-track em{color:var(--orange);font-style:normal;margin-right:44px}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-row">
+    <div class="brand">
+      <div class="brand-mark">D</div>
+      <div>
+        <div class="brand-name">Bill Feggins Academy</div>
+        <div class="brand-sub">Presented by Divine Insurance Group</div>
+      </div>
+    </div>
+    <div class="nav-cta">
+      <a href="#commissions" class="btn ghost small">CMS 2027</a>
+      <a href="#calculator" class="btn ghost small">Calculator</a>
+      <a href="#fe-iul" class="btn ghost small">FE / IUL Grid</a>
+      <a href="#agenda" class="btn ghost small">Agenda</a>
+      <a href="#register" class="btn small">Reserve My Seat</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Free 1-Hour Broker Masterclass · Live on Zoom</span>
+      <h1>Own Your Book. <span>Print Your AEP.</span> Stop Renting Your Career.</h1>
+      <p class="lead">This past AEP flipped the game — plans changed, benefits shifted, and most agents got caught winging it. Our brokers had their <b>most successful AEP ever</b> because we didn't wing anything. Real strategy. Real tools. A territory-based blueprint months in advance. Come see the exact playbook.</p>
+
+      <div class="badges">
+        <span class="kicker"><span class="dot"></span> Monday · July 27, 2026</span>
+        <span class="kicker"><span class="dot"></span> 7:00 PM ET · 60 Minutes</span>
+        <span class="kicker"><span class="dot"></span> Live on Zoom · Replay Available</span>
+      </div>
+
+      <div id="countdown" class="countdown" aria-live="polite">
+        <div class="cd"><b id="cd-d">--</b><small>Days</small></div>
+        <div class="cd"><b id="cd-h">--</b><small>Hours</small></div>
+        <div class="cd"><b id="cd-m">--</b><small>Min</small></div>
+        <div class="cd"><b id="cd-s">--</b><small>Sec</small></div>
+      </div>
+
+      <div class="cta-row">
+        <a href="#register" class="btn">Reserve My Free Seat</a>
+        <a href="https://www.eventbrite.com/e/the-aep-blueprint-bill-feggins-academy-broker-masterclass-tickets-1994513305989" target="_blank" rel="noopener" class="btn ghost">Register on Eventbrite</a>
+      </div>
+
+      <div class="meta">
+        <span><b>1,500+</b> MAPD apps written</span>
+        <span><b>1,000+</b> FE cases</span>
+        <span><b>20 yrs</b> field experience</span>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="thumb">
+        <iframe src="https://www.youtube.com/embed/3bYJIEWR6aw?rel=0&modestbranding=1" title="Bill Feggins — Biography of a Champion · Lifetime Legacy Award" loading="lazy" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+      <div class="caption">
+        <small>Watch · 2 min preview</small>
+        <a href="https://www.youtube.com/@divineinsurancegroup" target="_blank" rel="noopener" class="btn ghost small">Full YouTube Channel →</a>
+      </div>
+    </div>
+  </div>
+  <div class="stripe"></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>
+      <em>◆</em> DIRECT-TO-CARRIER CONTRACTS
+      <em>◆</em> 80–155% CONTRACT LEVELS
+      <em>◆</em> 9-MONTH ADVANCES
+      <em>◆</em> LIVE LEAD TRANSFERS
+      <em>◆</em> FREE CRM STACK + AI
+      <em>◆</em> YOU OWN YOUR BOOK — IN WRITING
+      <em>◆</em> NO CAPTIVE HANDCUFFS
+      <em>◆</em> DIRECT-TO-CARRIER CONTRACTS
+      <em>◆</em> 80–155% CONTRACT LEVELS
+      <em>◆</em> 9-MONTH ADVANCES
+      <em>◆</em> LIVE LEAD TRANSFERS
+      <em>◆</em> FREE CRM STACK + AI
+      <em>◆</em> YOU OWN YOUR BOOK — IN WRITING
+    </span>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="dark">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What Nobody Tells You</span>
+      <h2>Your FMO Gave You Zero Real Help</h2>
+      <p class="lead">Getting certified is not a production strategy. Most brokers miss the biggest moments in Medicare because they're stuck calling old leads that don't answer (call-screening is real), driving all over creation, or worse — set up in captive-style situations where someone else controls the relationship.</p>
+    </div>
+    <div class="strip">
+      <div class="cell"><b>The LOA Trap</b><p>You think you're "contracted." You're actually writing under someone else's number. If you leave — the book stays.</p></div>
+      <div class="cell"><b>Marketing Math</b><p>Every FMO has their own "100," their own "130." Nobody defines the terms. Starting contracts sitting 2 points behind another shop's "130 Executive."</p></div>
+      <div class="cell"><b>One-Shelf Prison</b><p>Captive shops sold as "brokerages." One product line. One script. Same rah-rah zoom every morning. No cross-sell. No control.</p></div>
+      <div class="cell"><b>Renewal Extraction</b><p>Upline siphoning your overrides. Production minimums to keep contracts. Termed every 18 months so someone else keeps the vesting.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL LEARN -->
+<section id="agenda" class="card-band">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Playbook</span>
+      <h2>What We're Breaking Down Live</h2>
+      <p class="lead">One hour. Zero fluff. The exact system our brokers ran to have their best AEP ever while everyone else panicked.</p>
+    </div>
+
+    <table class="agenda" aria-label="Webinar Agenda">
+      <thead>
+        <tr><th style="width:80px">#</th><th>Segment</th><th>What You Walk Away With</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">01</td><td><b>The 100-App Territory Plan</b></td><td>A weekly, daily, and appointment-level breakdown to write 100+ MAPD apps without burning out or driving 400 miles a week.</td></tr>
+        <tr><td class="num">02</td><td><b>Tools + Lead Programs That Actually Work</b></td><td>The stack we run: free CRM, funnels, automation + AI tools, live lead transfers — and what to kill.</td></tr>
+        <tr><td class="num">03</td><td><b>Grassroots Marketing By State</b></td><td>Community events, senior tables, church partnerships, and educational workshops. Win locally without wasting time.</td></tr>
+        <tr><td class="num">04</td><td><b>Contracts &amp; Ownership</b></td><td>Direct-to-carrier vs LOA. Street-level MA commissions. GA / MGA / SGA management contracts. Read the actual grid.</td></tr>
+        <tr><td class="num">05</td><td><b>Cross-Sell Final Expense &amp; IUL</b></td><td>How to properly bolt on Final Expense and IUL to every MAPD client — and why Transamerica's Funeral Concierge (free Will + POA) closes cold prospects.</td></tr>
+        <tr><td class="num">06</td><td><b>The Blueprint Timeline</b></td><td>Months-in-advance action plan so you show up to AEP with a system, not confusion.</td></tr>
+        <tr><td class="num">07</td><td><b>Live Q&amp;A with Bill</b></td><td>Bring your contract questions, your production goals, your state, your carriers. Real numbers, no pitch.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- HOST / CREDIBILITY -->
+<section>
+  <div class="container host">
+    <div>
+      <div class="photo">
+        <div class="initials">BF</div>
+        <div class="overlay"><b>William "Bill" Feggins</b><br><small>President · Divine Insurance Group · Philadelphia, PA</small></div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow">Who's Teaching</span>
+      <h2>Learn From A Producer, Not A Recruiter.</h2>
+      <p class="lead">Bill Feggins is the President of Divine Insurance Group — a Philadelphia-based IMO helping licensed agents sell more Final Expense, IUL, Medicare, and Pre-Need on top-street contracts, with 9-month advances, live lead transfers, and real back-office support.</p>
+      <p>Bill has spent ~20 years in the trenches — carrier grids, field events, senior community outreach, grassroots Medicare marketing, cross-sell training, and now building the digital + AI stack for the next generation of independent agents. This isn't theory. He's written the applications, taken the awards, and pulled the contracts apart line-by-line.</p>
+
+      <div class="stats">
+        <div class="stat"><b>1,500<em>+</em></b><span>MAPD Apps Written</span></div>
+        <div class="stat"><b>1,000<em>+</em></b><span>Final Expense Cases</span></div>
+        <div class="stat"><b>20<em>yrs</em></b><span>Field Experience</span></div>
+        <div class="stat"><b>48<em>hr</em></b><span>Contracting Speed</span></div>
+      </div>
+
+      <div class="credentials">
+        <span class="cred">IMO Direct</span>
+        <span class="cred">Multi-Carrier</span>
+        <span class="cred">Bill Feggins Academy</span>
+        <span class="cred">Divine Insurance Group</span>
+        <span class="cred">Transamerica FE Express</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF VIDEOS -->
+<section class="dark">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Proof · Not Marketing Math</span>
+      <h2>See The Awards. See The Work.</h2>
+      <p class="lead">Everything on this page is documented on the Divine Insurance Group YouTube channel. Real production. Real awards. Real client wins.</p>
+    </div>
+    <div class="vgrid">
+      <div class="vitem">
+        <div class="thumb"><iframe src="https://www.youtube.com/embed/O6ZgdhWzeqw?rel=0&modestbranding=1" title="Bill Feggins Personal Production Awards" loading="lazy" allowfullscreen></iframe></div>
+        <div class="meta"><small>Awards · Production Proof</small><b>Personal Production Awards</b></div>
+      </div>
+      <div class="vitem">
+        <div class="thumb"><iframe src="https://www.youtube.com/embed/7pfvGGpgrWQ?rel=0&modestbranding=1" title="Behind the Scenes of Success on Wall Street" loading="lazy" allowfullscreen></iframe></div>
+        <div class="meta"><small>Story · Behind The Scenes</small><b>Success On Wall Street</b></div>
+      </div>
+      <div class="vitem">
+        <div class="thumb"><iframe src="https://www.youtube.com/embed/55XQH7BbD4w?rel=0&modestbranding=1" title="Bill Feggins A.I Academy — Medicare SOTU for 2026" loading="lazy" allowfullscreen></iframe></div>
+        <div class="meta"><small>Training · Medicare 2026</small><b>Medicare SOTU 2026 · AI Academy</b></div>
+      </div>
+      <div class="vitem">
+        <div class="thumb"><iframe src="https://www.youtube.com/embed/kQjZv51o5Ng?rel=0&modestbranding=1" title="Transamerica Final Expense Express Training" loading="lazy" allowfullscreen></iframe></div>
+        <div class="meta"><small>Training · Cross-Sell FE</small><b>Transamerica FE Express Training</b></div>
+      </div>
+      <div class="vitem">
+        <div class="thumb"><iframe src="https://www.youtube.com/embed/fzMyCyxNIsg?rel=0&modestbranding=1" title="Legacy, Leadership, and Life Insurance" loading="lazy" allowfullscreen></iframe></div>
+        <div class="meta"><small>Keynote</small><b>Legacy, Leadership &amp; Life Insurance</b></div>
+      </div>
+      <div class="vitem">
+        <div class="thumb"><iframe src="https://www.youtube.com/embed/eq-Aq3-l-ug?rel=0&modestbranding=1" title="Significant TV Feature — Divine Insurance Group" loading="lazy" allowfullscreen></iframe></div>
+        <div class="meta"><small>Media Feature</small><b>Significant TV Feature</b></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:26px">
+      <a class="btn ghost" href="https://www.youtube.com/@divineinsurancegroup" target="_blank" rel="noopener">Watch More On YouTube →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CMS 2027 COMMISSION TRANSPARENCY -->
+<section id="commissions" class="cms-band">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">CMS 2027 · Fair Market Value Compensation</span>
+      <h2>Are You Getting Paid Every Dollar CMS Says You're Owed?</h2>
+      <p class="lead">CMS just released the maximum FMV compensation rates for Contract Year 2027. Here's exactly what a Medicare Advantage &amp; PDP enrollment is worth — nationally and in Pennsylvania. If your FMO isn't paying you these numbers, you're leaving money on the table. Every day.</p>
+    </div>
+
+    <div class="warn">
+      <div class="icon">!</div>
+      <div>
+        <b>If You're on an LOA, You Don't Own Your Book — Period.</b>
+        <p>You're writing under someone else's number. If you leave, the book stays. And if you're being paid less than the CMS maximums shown below, your FMO is pocketing the difference and calling it their "model." That's not a partnership — that's you funding their retirement.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Anton';letter-spacing:.05em;color:#fff;text-transform:uppercase;font-size:18px;margin:26px 0 10px">CY 2027 Maximum Broker Commissions</h3>
+    <table class="cms" aria-label="CMS 2027 Maximum Fair Market Value Commissions">
+      <thead>
+        <tr><th>Product / Region</th><th>Initial Enrollment</th><th>Renewal</th><th>Change vs 2026</th></tr>
+      </thead>
+      <tbody>
+        <tr class="hilite"><td><b style="color:#fff">Medicare Advantage — Pennsylvania (Philly)</b></td><td class="num">$816</td><td class="num">$408</td><td class="diff">+4.5%</td></tr>
+        <tr><td><b style="color:#fff">Medicare Advantage — National Baseline</b></td><td class="num">$725</td><td class="num">$363</td><td class="diff">Baseline</td></tr>
+        <tr><td><b style="color:#fff">Prescription Drug Plans (PDP)</b></td><td class="num">$130</td><td class="num">$65</td><td class="diff">+14%</td></tr>
+        <tr><td><b style="color:#fff">Referral Fees — MA Plans</b></td><td class="num">$100</td><td class="num">—</td><td class="diff">Held</td></tr>
+        <tr><td><b style="color:#fff">Referral Fees — PDP</b></td><td class="num">$25</td><td class="num">—</td><td class="diff">Held</td></tr>
+      </tbody>
+    </table>
+
+    <div class="grid g-2" style="margin-top:22px">
+      <div class="card">
+        <span class="num">The Rule</span>
+        <h3>Carriers Set The Payout — Up To The CMS Cap.</h3>
+        <p>CMS finalized a 2.48% pay bump to Medicare Advantage plans for 2027, reversing some of the more restrictive structural changes tied up in federal court. Carriers set their actual payouts and can adjust them anywhere up to these CMS-mandated maximums.</p>
+        <p><b style="color:#fff">Translation:</b> The ceiling is $816 initial for a PA MAPD. If your FMO pays you $600 and keeps the rest, that spread is legal — but that's not "the market." That's their cut. Ask for the grid.</p>
+      </div>
+      <div class="card">
+        <span class="num">The Divine Way</span>
+        <h3>Paid Direct-To-Carrier · Full CMS Compensation.</h3>
+        <p>At Divine you're contracted direct to the carrier. The carrier pays you — not us. You get the full CMS-allowed compensation the carrier has approved for your level. No middle-man extraction. No "our version" of the CMS number.</p>
+        <ul>
+          <li>Full CMS max FMV where the carrier pays it</li>
+          <li>Street-level MA commissions across our carriers</li>
+          <li>You <b style="color:#fff">own your book</b> — in writing</li>
+          <li>Only exception: most Blue Cross carriers still pay through an FMO model industry-wide</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="src">
+      <b style="color:#fff;text-transform:uppercase;letter-spacing:.1em;font-family:'Anton';font-size:12px">Sources:</b>
+      <a href="https://www.cms.gov/newsroom/press-releases/cms-finalizes-2027-medicare-advantage-part-d-payment-policies-strengthen-accountability-long-term" target="_blank" rel="noopener">CMS 2027 Payment Policies Press Release</a> ·
+      <a href="https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-rate-announcement" target="_blank" rel="noopener">CMS 2027 Rate Announcement Fact Sheet</a> ·
+      <a href="https://blog.enrollinsurance.com/2026/06/the-proposed-2027-cms-agent-and-broker-medicare-advantage-and-pdp-commissions/" target="_blank" rel="noopener">Enroll Insurance breakdown</a> ·
+      <a href="https://iadbrokerage.com/cms-2027-compensation-rates-agent-maximums/" target="_blank" rel="noopener">IAD Brokerage state maximums</a> ·
+      <a href="https://blog.actionbenefits.com/cms-medicare-advantage-commissions" target="_blank" rel="noopener">Action Benefits agent guide</a> ·
+      <a href="https://carolinaseniormarketing.com/medicare/medicare-advantage-pdp-broker-commissions-for-2027/" target="_blank" rel="noopener">Carolina Senior Marketing</a> ·
+      <a href="https://www.healthplusoneagency.com/blog/2027-maximum-broker-commissions" target="_blank" rel="noopener">Health Plus One 2027 maximums</a> ·
+      <a href="https://www.fiercehealthcare.com/regulatory/cms-gives-medicare-advantage-rates-248-bump-2027-plan-year-final-rule" target="_blank" rel="noopener">Fierce Healthcare · 2.48% rate bump</a> ·
+      <a href="https://medicare.chir.georgetown.edu/from-flat-to-favorable-how-medicare-advantage-payments-increased-in-the-calendar-year-cy-2027-rate-announcement/" target="_blank" rel="noopener">Georgetown CHIR analysis</a> ·
+      <a href="https://medicareadvocacy.org/cms-caves-to-medicare-advantage-industry/" target="_blank" rel="noopener">Center for Medicare Advocacy review</a> ·
+      <a href="https://www.youtube.com/shorts/K1Ok1iEZxUY" target="_blank" rel="noopener">Bill's YouTube short on CY 2027</a>
+    </p>
+
+    <div style="text-align:center;margin-top:26px">
+      <a href="#register" class="btn">Learn The Full Compensation Playbook Live →</a>
+    </div>
+  </div>
+</section>
+
+<!-- BROKER INCOME CALCULATOR -->
+<section id="calculator" class="dark">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Divine Broker Income Calculator</span>
+      <h2>See What You're Leaving On The Table — In 60 Seconds.</h2>
+      <p class="lead">Drag the sliders. Pick your state. Pick your contract level. This is the same math our top producers run before every AEP — side by side with what an LOA or captive contract would pay you on the exact same production.</p>
+    </div>
+
+    <div class="calc-wrap">
+      <div class="calc-grid">
+
+        <div class="calc-inputs">
+          <div class="persona-tabs" role="tablist">
+            <button type="button" data-persona="senior" class="active">Senior Client<small>Medicare + FE + Hospital Indemnity</small></button>
+            <button type="button" data-persona="family">Family Cross-Sell<small>Adult Child / Spouse IUL &lt; 60</small></button>
+          </div>
+
+          <h3 style="font-family:'Anton';letter-spacing:.05em;font-size:22px;text-transform:uppercase;margin-bottom:18px">Your Monthly Production</h3>
+
+          <div class="field">
+            <div class="range-row"><label>State</label></div>
+            <select id="c-state">
+              <option value="816" selected>Pennsylvania — $816 MAPD Initial</option>
+              <option value="725">National Baseline — $725 MAPD Initial</option>
+              <option value="780">New Jersey / Delaware — ~$780</option>
+              <option value="780">New York — ~$780</option>
+              <option value="780">California — ~$780</option>
+              <option value="725">Florida — $725</option>
+              <option value="725">Texas — $725</option>
+              <option value="725">Georgia — $725</option>
+              <option value="725">All other states — $725</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <div class="range-row"><label>MAPD Apps / Month</label><b id="c-mapd-v">10</b></div>
+            <input type="range" id="c-mapd" min="0" max="60" value="10" />
+          </div>
+
+          <div class="field">
+            <div class="range-row"><label>PDP Apps / Month</label><b id="c-pdp-v">3</b></div>
+            <input type="range" id="c-pdp" min="0" max="30" value="3" />
+          </div>
+
+          <div class="field">
+            <div class="range-row"><label>Final Expense Apps / Month</label><b id="c-fe-v">6</b></div>
+            <input type="range" id="c-fe" min="0" max="40" value="6" />
+          </div>
+
+          <div class="field">
+            <div class="range-row"><label>Avg FE Monthly Premium</label><b id="c-fe-prem-v">$60</b></div>
+            <input type="range" id="c-fe-prem" min="30" max="200" step="5" value="60" />
+          </div>
+
+          <!-- SENIOR-only ancillaries -->
+          <div id="senior-group">
+            <div class="field">
+              <div class="range-row"><label>Hospital Indemnity Apps / Month <span style="color:#F9C7A5;font-size:10px">· #1 senior cross-sell</span></label><b id="c-hi-v">4</b></div>
+              <input type="range" id="c-hi" min="0" max="40" value="4" />
+            </div>
+            <div class="field">
+              <div class="range-row"><label>Avg HI Monthly Premium</label><b id="c-hi-prem-v">$40</b></div>
+              <input type="range" id="c-hi-prem" min="20" max="120" step="5" value="40" />
+            </div>
+            <div class="field">
+              <div class="range-row"><label>Cancer / Critical Illness Riders / Month</label><b id="c-cn-v">2</b></div>
+              <input type="range" id="c-cn" min="0" max="30" value="2" />
+            </div>
+            <div class="field">
+              <div class="range-row"><label>Avg Cancer/CI Monthly Premium</label><b id="c-cn-prem-v">$25</b></div>
+              <input type="range" id="c-cn-prem" min="15" max="80" step="5" value="25" />
+            </div>
+          </div>
+
+          <!-- FAMILY-only IUL -->
+          <div id="family-group" style="display:none">
+            <div class="field">
+              <div class="range-row"><label>IUL Apps / Month <span style="color:#F9C7A5;font-size:10px">· adult child / spouse under 60</span></label><b id="c-iul-v">1</b></div>
+              <input type="range" id="c-iul" min="0" max="15" value="1" />
+            </div>
+            <div class="field">
+              <div class="range-row"><label>Avg IUL Target Premium (annual)</label><b id="c-iul-prem-v">$1,200</b></div>
+              <input type="range" id="c-iul-prem" min="600" max="6000" step="100" value="1200" />
+            </div>
+            <div class="field">
+              <div class="range-row"><label>Adult-Child FE Apps / Month</label><b id="c-fex-v">1</b></div>
+              <input type="range" id="c-fex" min="0" max="20" value="1" />
+            </div>
+            <div class="field">
+              <div class="range-row"><label>Avg Adult-Child FE Monthly Premium</label><b id="c-fex-prem-v">$45</b></div>
+              <input type="range" id="c-fex-prem" min="30" max="150" step="5" value="45" />
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="range-row"><label>Your Divine Contract Level</label></div>
+            <div class="contract-slider" role="tablist">
+              <button type="button" data-lvl="street" class="active">Street</button>
+              <button type="button" data-lvl="mid">Producer</button>
+              <button type="button" data-lvl="top">Top Tier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-out">
+          <div class="headline">
+            <div>
+              <small>Projected Annual Gross — Divine Direct-to-Carrier</small>
+              <div class="calc-total" id="c-total">$0</div>
+              <div class="calc-sub" id="c-monthly">≈ $0 / month first-year commissions</div>
+            </div>
+          </div>
+
+          <div class="calc-breakdown">
+            <div class="r"><div><small>MAPD Initial</small><b id="c-out-mapd">$0</b></div></div>
+            <div class="r"><div><small>PDP Initial</small><b id="c-out-pdp">$0</b></div></div>
+            <div class="r"><div><small>Final Expense FYC</small><b id="c-out-fe">$0</b></div></div>
+            <div class="r senior-only"><div><small>Hospital Indemnity FYC</small><b id="c-out-hi">$0</b></div></div>
+            <div class="r senior-only"><div><small>Cancer / CI FYC</small><b id="c-out-cn">$0</b></div></div>
+            <div class="r family-only" style="display:none"><div><small>IUL Target Comp</small><b id="c-out-iul">$0</b></div></div>
+            <div class="r family-only" style="display:none"><div><small>Adult-Child FE FYC</small><b id="c-out-fex">$0</b></div></div>
+            <div class="r" style="grid-column:1 / -1;background:rgba(242,103,34,.08);border-color:rgba(242,103,34,.4)"><div><small>Yr 2+ Renewal Tail (per year, if 100% persistency)</small><b id="c-out-renew" style="color:var(--orange)">$0</b></div></div>
+          </div>
+
+          <div class="household-total">
+            <div class="lbl">
+              <small>Avg Per-Household Value — First Year</small>
+              <b id="c-hh-label">Senior client: MAPD + FE + HI + Cancer</b>
+            </div>
+            <div class="val" id="c-hh-total">$0</div>
+          </div>
+
+          <div class="calc-vs">
+            <b>vs LOA / Captive Contract on Same Production</b>
+            <p id="c-vs-text">If you were writing the same 10 MAPD + 3 PDP + 6 FE + 1 IUL under an LOA at ~60% of Divine's payout, your gross would be roughly <span class="delta" id="c-vs-loa">$0</span> — you'd leave <span class="delta" id="c-vs-delta">$0</span> on the table this year. And you wouldn't own the book.</p>
+          </div>
+
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:16px">
+            <a href="#register" class="btn">Reserve My Free Seat</a>
+            <a href="https://calendly.com/retireeduconnect-info" target="_blank" rel="noopener" class="btn ghost">Book 15 Min With Bill</a>
+          </div>
+
+          <p style="color:#7D818A;font-size:11px;margin-top:14px;line-height:1.6">Estimates use CMS 2027 max FMV for MAPD initial commission ($816 PA / $725 baseline / $780 select states), $130 PDP initial. FE annualized premium × 100% / 115% / 130% by contract tier. Hospital Indemnity annualized premium × 25% / 40% / 55% (senior-market street to producer heaped). Cancer / Critical Illness annualized premium × 25% / 40% / 55%. IUL target premium × 90% / 105% / 125%. Renewal tail assumes ~5% MA renewal, 5% FE renewal, 6% HI renewal, 5% Cancer renewal, 3% IUL excess for illustration only. Actual commissions vary by carrier, product, contract level, state, age, and persistency. This is a planning tool — not a guarantee.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FE / IUL TRANSPARENCY CHART -->
+<section id="fe-iul" class="card-band">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Transparency Chart · FE + IUL Contracts</span>
+      <h2>Final Expense &amp; IUL Commissions — In Plain English.</h2>
+      <p class="lead">Every contract sourced. Every definition explained. Every number broken down. If we can't verify it, it doesn't make the list. Here's what Divine pays on Final Expense and IUL — side by side with what captive shops and typical IMOs pay. Then we show you the AEP cross-sell math.</p>
+    </div>
+
+    <h3 style="font-family:'Anton';letter-spacing:.05em;color:#fff;text-transform:uppercase;font-size:18px;margin:8px 0 10px">Final Expense First-Year Commission (by contract type)</h3>
+    <table class="fe" aria-label="Final Expense Commission by Contract Type">
+      <thead>
+        <tr><th>Contract Type</th><th>First-Year Commission</th><th>Renewal (Yrs 2–10)</th><th>Advance</th><th>You Own The Book?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="tag c">Captive / Agency</span> New-agent contract</td><td class="pct captive">60–80%</td><td>2–5%</td><td>Varies</td><td>No — the agency does</td></tr>
+        <tr><td><span class="tag s">Street Level</span> Direct with carrier, no proof of production</td><td class="pct">80–110%</td><td>3–6%</td><td>9-month typical</td><td>Yes — direct-to-carrier</td></tr>
+        <tr><td><span class="tag s">Typical IMO / FMO</span> Independent producer with an IMO</td><td class="pct">100–120%</td><td>5–8%</td><td>9-month typical</td><td>Usually, if contract says so</td></tr>
+        <tr class="divine-row"><td><span class="tag d">Divine Insurance Group</span> Broker-direct-to-carrier</td><td class="pct divine">90–145%</td><td>Full carrier schedule</td><td class="pct divine" style="font-size:14px">9-month advance</td><td>YES — in writing</td></tr>
+        <tr><td><span class="tag s">Top-Producer / Negotiated</span> Rare, requires 15+ policies/wk</td><td class="pct">115–130%</td><td>7–10%</td><td>9-mo (75% advance rate typical)</td><td>Yes</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-family:'Anton';letter-spacing:.05em;color:#fff;text-transform:uppercase;font-size:18px;margin:26px 0 10px">Popular FE Carrier Grids (Public 2025–2026 References)</h3>
+    <table class="fe" aria-label="Final Expense Carriers Commission Grid">
+      <thead>
+        <tr><th>Carrier / Product</th><th>Street</th><th>Divine Broker Pays Up To</th><th>Renewals</th></tr>
+      </thead>
+      <tbody>
+        <tr class="divine-row"><td><b style="color:#fff">Transamerica FE Express Solution</b> (Bill's specialty)</td><td class="pct">110%</td><td class="pct divine">Up to 145%</td><td>2.75% yrs 2–5 / 1.75% yrs 6–10</td></tr>
+        <tr><td><b style="color:#fff">Mutual of Omaha</b> Living Promise</td><td class="pct">120%</td><td class="pct divine">Contract to street</td><td>~5%</td></tr>
+        <tr><td><b style="color:#fff">Aetna / ACI-CLI</b> Final Expense</td><td class="pct">130%</td><td class="pct divine">Contract to street</td><td>~7–12%</td></tr>
+        <tr><td><b style="color:#fff">Foresters</b> PlanRight</td><td class="pct">135%</td><td class="pct divine">Contract to street</td><td>~8.25%</td></tr>
+        <tr><td><b style="color:#fff">American Amicable</b> Home Protector</td><td class="pct">130%</td><td class="pct divine">Contract to street</td><td>~8.5%</td></tr>
+        <tr><td><b style="color:#fff">SBLI</b> Living Legacy</td><td class="pct">130%</td><td class="pct divine">Contract to street</td><td>~7.75%</td></tr>
+        <tr><td><b style="color:#fff">Royal Neighbors</b> Level FE</td><td class="pct">120%</td><td class="pct divine">Contract to street</td><td>~7.25%</td></tr>
+      </tbody>
+    </table>
+    <p class="src" style="margin-bottom:26px">
+      Public references verifying contract-level ranges above:
+      <a href="https://www.insurancemarketingco.com/blog/final-expense-commission-levels-for-agents" target="_blank" rel="noopener">Insurance Marketing Co</a> ·
+      <a href="https://northstaria.com/career/final-expense-agent-commission-income/" target="_blank" rel="noopener">North Star FE Agent Guide 2026</a> ·
+      <a href="https://www.getinsureleads.com/blog/final-expense-commission" target="_blank" rel="noopener">InsureLeads FE Commissions 2026</a> ·
+      <a href="https://www.fmiagent.com/wp-content/uploads/2025-10-16_Transamerica_Final_Expense_Solutions_Advisor_Guide_3247945R9_7-25.pdf" target="_blank" rel="noopener">Transamerica FE Advisor Guide (PDF)</a> ·
+      <a href="https://www.cghgroup.net/uploads/1/3/9/6/139646209/cl10_comp_grid__7.2025_.pdf" target="_blank" rel="noopener">2025 Multi-Carrier Comp Grid (PDF)</a> ·
+      <a href="https://www.youtube.com/watch?v=IHqGZNJbw7s" target="_blank" rel="noopener">Bill Feggins Academy — Transamerica FE walkthrough</a> ·
+      <a href="https://www.youtube.com/watch?v=kQjZv51o5Ng" target="_blank" rel="noopener">Divine — Transamerica FE Express Solutions training</a>
+    </p>
+
+    <h3 style="font-family:'Anton';letter-spacing:.05em;color:#fff;text-transform:uppercase;font-size:18px;margin:26px 0 10px">Hospital Indemnity + Cancer / CI — The Senior Cross-Sell Layer</h3>
+    <table class="fe" aria-label="Hospital Indemnity and Cancer Commission Grid">
+      <thead>
+        <tr><th>Product</th><th>Avg Client Premium</th><th>First-Year Commission</th><th>Per-Sale Comp (est.)</th></tr>
+      </thead>
+      <tbody>
+        <tr class="divine-row"><td><b style="color:#fff">Hospital Indemnity (Medicare pairing)</b> — Mutual of Omaha, Aetna, GTL, Manhattan Life, Cigna</td><td>$30–$75 / mo</td><td class="pct divine">25–55% FYC (heaped)</td><td class="pct divine">$150–$400</td></tr>
+        <tr><td><b style="color:#fff">Cancer / Critical Illness</b> — Cigna Flex Choice, Aflac, Continental American</td><td>$15–$40 / mo</td><td class="pct divine">40–60% FYC</td><td class="pct divine">$100–$300</td></tr>
+        <tr><td><b style="color:#fff">Accident</b> — Voluntary worksite/senior</td><td>$10–$30 / mo</td><td class="pct">35–60% FYC</td><td class="pct">$50–$200</td></tr>
+        <tr><td><b style="color:#fff">Dental / Vision / Hearing (DVH)</b></td><td>$20–$45 / mo</td><td class="pct">20–35% FYC</td><td class="pct">$50–$150</td></tr>
+      </tbody>
+    </table>
+    <p class="src" style="margin-bottom:26px">
+      <b style="color:#fff;text-transform:uppercase;letter-spacing:.1em;font-family:'Anton';font-size:12px">Sources:</b>
+      <a href="https://healthnewsreporting.com/schemes-and-policies/hospital-indemnity-health-insurance-agent-commission-chart-2025/" target="_blank" rel="noopener">Hospital Indemnity Commission Chart 2025</a> ·
+      <a href="https://nccagent.com/commissions-medicare-agent-training-guide/" target="_blank" rel="noopener">NCC Medicare Agent Commission Guide</a> ·
+      <a href="https://producer.mutualofomaha.com/enterprise/moo_ebs_CommunicationViewer/EDRDocumentServlet?edrId=C0iZDpfXCmWOOLiQRJcTAg==" target="_blank" rel="noopener">Mutual of Omaha Commission Schedule</a> ·
+      <a href="https://yourfmo.com/wp-content/uploads/2024/06/YourFMOAgentGuide-MA-and-HI-053024-CG.pdf" target="_blank" rel="noopener">YourFMO Agent Guide — MA + HI (PDF)</a> ·
+      <a href="https://sixtyfiveleads.com/post/medicare-cross-sell-map" target="_blank" rel="noopener">The Medicare Cross-Sell Map (5-yr LTV)</a> ·
+      <a href="https://healthnewsreporting.com/schemes-and-policies/cancer-insurance-agent-commission-chart-2025/" target="_blank" rel="noopener">Cancer Insurance Commission Chart 2025</a>
+    </p>
+
+    <h3 style="font-family:'Anton';letter-spacing:.05em;color:#fff;text-transform:uppercase;font-size:18px;margin:26px 0 10px">IUL Commissions — What A Real IUL Contract Looks Like <span style="color:var(--gray);font-size:12px;letter-spacing:.05em;text-transform:none;font-family:'Inter'">· sold to adult child / spouse under 60, not the Medicare client</span></h3>
+    <table class="fe" aria-label="IUL Commission Contract Grid">
+      <thead>
+        <tr><th>Contract Type</th><th>Target Premium Commission</th><th>Excess Premium</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="tag c">Captive / Career Shop</span></td><td class="pct captive">40–65%</td><td>2–5%</td><td>One shelf. Product mandated. Overrides go up.</td></tr>
+        <tr><td><span class="tag s">Typical IUL IMO</span></td><td class="pct">70–95%</td><td>3–5%</td><td>Better, but often exclusivity or minimums.</td></tr>
+        <tr class="divine-row"><td><span class="tag d">Divine Insurance Group</span> Direct-to-carrier IUL</td><td class="pct divine">80–130%</td><td class="pct divine" style="font-size:14px">3–5%+</td><td>Full target commission on Transamerica FFIUL II — latest cap 7.25%. Non-exclusive. Keep any existing carrier numbers.</td></tr>
+        <tr><td><span class="tag s">Whole Life / Life 150%</span> Divine legacy contract</td><td class="pct divine">150%</td><td>Carrier schedule</td><td>9-mo advance; final 25% paid months 10–12.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- CROSS-SELL COMBO CARD -->
+    <div class="combo">
+      <span class="eyebrow">The Divine Cross-Sell Math</span>
+      <h3>One Senior Household = 4 Products, 4 Commissions.</h3>
+      <p style="color:#E7E8EC">The Medicare Advantage client is 65+ — IUL isn't the right product for them, but Hospital Indemnity is the #1 senior cross-sell (fills MA copay gaps). Add Cancer / Critical Illness on top, plus Final Expense for the burial concern, and one AEP appointment writes 4 policies. If the client has an adult child or spouse under 60, that's your IUL opportunity in the second sit.</p>
+
+      <p style="color:#F9C7A5;font-family:'Anton';letter-spacing:.06em;text-transform:uppercase;font-size:12px;margin-top:20px;margin-bottom:10px">Senior Household (65+) — PA rates, mid-range premiums, Divine street contracts:</p>
+      <div class="math">
+        <div class="m"><b>$816</b><small>MAPD Initial (PA CMS 2027)</small></div>
+        <div class="m"><b>$720</b><small>FE $60/mo × 100% Yr1</small></div>
+        <div class="m"><b>$192</b><small>HI $40/mo × 40% FYC</small></div>
+        <div class="m total"><b>$1,848</b><small>Senior Household 1st-Yr Total</small></div>
+      </div>
+      <p style="color:#B7BAC1;font-size:12px;margin-top:8px">+ Cancer / CI rider at $25/mo × 40% = another <b style="color:var(--orange)">$120</b>. Real senior household total: <b style="color:#fff">$1,968</b>.</p>
+
+      <p style="color:#F9C7A5;font-family:'Anton';letter-spacing:.06em;text-transform:uppercase;font-size:12px;margin-top:24px;margin-bottom:10px">Family Cross-Sell — adult child or spouse under 60:</p>
+      <div class="math">
+        <div class="m"><b>$1,200</b><small>IUL Target $1,200 × 100%</small></div>
+        <div class="m"><b>$540</b><small>Adult-Child FE $45/mo × 100%</small></div>
+        <div class="m"><b>$1,968</b><small>+ Senior parent household</small></div>
+        <div class="m total"><b>$3,708</b><small>Total Extended Family 1st-Yr</small></div>
+      </div>
+
+      <p style="color:#B7BAC1;font-size:13px;margin-top:16px">Illustrative only. Real Divine broker contracts write up to 145% FE, 55% HI, 60% Cancer, 130% IUL — the numbers scale as you move up the grid. Then add the renewal tail on all four lines every year the client stays. That's how a book of 300 households can throw off six figures in pure renewals before you write a new app.</p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px">
+        <a href="#register" class="btn">See The Full Cross-Sell Playbook Live</a>
+        <a href="https://calendly.com/retireeduconnect-info" target="_blank" rel="noopener" class="btn ghost">Book 15 Min With Bill →</a>
+      </div>
+    </div>
+
+    <div class="warn" style="margin-top:26px">
+      <div class="icon">!</div>
+      <div>
+        <b>LOA Warning — Read Before You Sign Anywhere Else</b>
+        <p>If your contract is a Letter of Authorization (LOA), you're writing under someone else's carrier number. That means the FE, IUL, and MA business you just wrote lives on THEIR ledger. When you leave — or they terminate you, which most LOA shops do at the 12–18 month mark — the book stays. Renewals stay. The client relationship they can call "theirs." That is the trap. Divine contracts every producer direct-to-carrier so the book is yours in writing on day one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET WITH DIVINE -->
+<section class="card-band">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Divine Difference</span>
+      <h2>Here's What You Actually Get With Us</h2>
+      <p class="lead">In plain English. Every contract sourced. Every definition explained. Every number broken down — and if we can't verify it, we don't say it.</p>
+    </div>
+
+    <ul class="checks">
+      <li><div class="ck">✓</div><div><b>You own your book — in writing.</b> Not marketing language. Contractual ownership. Period.</div></li>
+      <li><div class="ck">✓</div><div><b>Direct-to-carrier contracts.</b> Paid directly from most carriers. No agency sub-agreement pass-through.</div></li>
+      <li><div class="ck">✓</div><div><b>Street-level MA commissions.</b> Real grids — not "our version" of 100 or 130.</div></li>
+      <li><div class="ck">✓</div><div><b>80–155% contract levels.</b> Broker-direct compensation. 80–130% IUL / 90–145% FE verified.</div></li>
+      <li><div class="ck">✓</div><div><b>9-month advances.</b> Get paid to build, not just wait.</div></li>
+      <li><div class="ck">✓</div><div><b>Live lead transfers.</b> Real prospects on the phone — not aged internet junk.</div></li>
+      <li><div class="ck">✓</div><div><b>GA / MGA / SGA management contracts.</b> Available for producers ready to build a team.</div></li>
+      <li><div class="ck">✓</div><div><b>Free best-in-class tech stack.</b> CRM, funnels, automation, AI conversation follow-up.</div></li>
+      <li><div class="ck">✓</div><div><b>Grassroots + retail training.</b> Seminars, community events, and self-generated pipelines — not just dialing.</div></li>
+      <li><div class="ck">✓</div><div><b>Keep your Transamerica number.</b> Zero exclusivity. Bring your book.</div></li>
+      <li><div class="ck">✓</div><div><b>Contracted in 48 hours.</b> No hazing. No production minimums to stay contracted.</div></li>
+      <li><div class="ck">✓</div><div><b>No captive handcuffs.</b> No upline siphoning. No mandatory "team" calls eating your day.</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section id="register">
+  <div class="container">
+    <div class="form-wrap">
+      <span class="eyebrow" style="display:block;text-align:center">Reserve Your Seat</span>
+      <h2>Save My Free Spot — July 27, 7 PM ET</h2>
+      <p class="small">Free admission. Registration required. Replay sent to registrants only.</p>
+
+      <!-- Replace this form action with your GHL form embed. See instructions below. -->
+      <form id="regform" action="https://www.eventbrite.com/e/the-aep-blueprint-bill-feggins-academy-broker-masterclass-tickets-1994513305989" method="get" target="_blank" onsubmit="return handleRegister(event)">
+        <div class="row">
+          <div class="field"><label for="fn">First Name*</label><input required id="fn" name="first_name" type="text" placeholder="First"></div>
+          <div class="field"><label for="ln">Last Name*</label><input required id="ln" name="last_name" type="text" placeholder="Last"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="em">Email*</label><input required id="em" name="email" type="email" placeholder="you@email.com"></div>
+          <div class="field"><label for="ph">Mobile*</label><input required id="ph" name="phone" type="tel" placeholder="(555) 555-5555"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="st">State*</label><input required id="st" name="state" type="text" placeholder="PA" maxlength="2" style="text-transform:uppercase"></div>
+          <div class="field"><label for="lic">Currently Licensed?</label>
+            <select id="lic" name="licensed">
+              <option>Yes — Life &amp; Health</option>
+              <option>Yes — Life only</option>
+              <option>Yes — Health only</option>
+              <option>Studying / Pre-licensing</option>
+              <option>Not yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="focus">Biggest Focus For AEP 2026</label>
+          <select id="focus" name="focus">
+            <option>Medicare Advantage production</option>
+            <option>Cross-sell Final Expense</option>
+            <option>IUL / life insurance</option>
+            <option>Building a team (GA/MGA/SGA)</option>
+            <option>Escaping a captive / LOA situation</option>
+            <option>Just exploring — send me the replay</option>
+          </select>
+        </div>
+        <div class="consent">
+          <input required type="checkbox" id="sms" name="sms_consent">
+          <label for="sms" style="text-transform:none;letter-spacing:0;color:#B7BAC1;font-size:12px">I agree to receive event emails and SMS from Divine Insurance Group &amp; Bill Feggins Academy. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out. Consent is not a condition of purchase.</label>
+        </div>
+        <button class="btn" type="submit">Yes — Save My Free Seat</button>
+        <p class="form-note">Educational event for insurance professionals. Licensing and carrier requirements apply. Individual results vary. 1,500+ MAPD and 1,000+ FE production figures reflect Bill Feggins' documented career production, not a promise of attendee results.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <span class="eyebrow" style="color:#0B0B0C;background:#fff;padding:6px 14px;border-radius:999px">1 Hour · Live · Free</span>
+    <h2 style="margin-top:14px">Stop Entering AEP Without A Blueprint.</h2>
+    <p>The agents who position themselves NOW — direct contracts, owned book, learning the digital + AI stack — will be running the agencies of 2030. The rest will look back on this moment and wish they had moved.</p>
+    <a href="#register" class="btn">Reserve My Free Seat</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container" style="max-width:820px">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>Frequently Asked</h2>
+    </div>
+
+    <details class="faq" open><summary>Do I have to be licensed to attend?</summary><p>No. We welcome pre-licensed agents who are studying. Just be honest on the form — we'll route the right resources to you.</p></details>
+    <details class="faq"><summary>Is this a pitch?</summary><p>No pitch, no pressure. It's 60 minutes of the exact system we ran last AEP + Q&amp;A. If contracting with Divine makes sense for you at the end, we'll set a separate call.</p></details>
+    <details class="faq"><summary>Will there be a replay?</summary><p>Yes — but only registrants get the replay link. Register even if you can't attend live.</p></details>
+    <details class="faq"><summary>Do you take agents in every state?</summary><p>Yes, in most states. We'll confirm your carrier options based on where you're licensed.</p></details>
+    <details class="faq"><summary>Do I have to give up my current contracts?</summary><p>No. You can keep your existing carrier numbers (including Transamerica) — zero exclusivity required.</p></details>
+    <details class="faq"><summary>How fast can I get contracted?</summary><p>48 hours is typical for most carriers after paperwork is complete.</p></details>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row-f">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <div class="brand-mark">D</div>
+          <div>
+            <div class="brand-name" style="color:#fff">Divine Insurance Group</div>
+            <div class="brand-sub">Bill Feggins Academy · Philadelphia, PA</div>
+          </div>
+        </div>
+        <p style="max-width:420px;color:#8A8F98">Independent IMO. Licensed life &amp; health insurance brokerage. Multi-carrier contracts, back-office support, and broker training for producers who want to own their book.</p>
+      </div>
+      <div>
+        <b style="color:#fff;font-family:'Anton';letter-spacing:.08em;font-size:14px;text-transform:uppercase">Follow</b>
+        <div class="social" style="margin-top:10px">
+          <a href="https://www.youtube.com/@divineinsurancegroup" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+          <a href="https://www.facebook.com/people/Divine-Insurance-Group/61570755633353/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://www.facebook.com/william.feggins.734143" target="_blank" rel="noopener" aria-label="Bill Feggins">B</a>
+        </div>
+        <p style="margin-top:14px"><a href="mailto:info@retireeduconnect.com">info@retireeduconnect.com</a></p>
+        <p><a href="https://calendly.com/retireeduconnect-info" target="_blank" rel="noopener">Book 15 min with Bill →</a></p>
+      </div>
+    </div>
+    <div class="disclosure">
+      © 2026 Divine Insurance Group. All rights reserved. Bill Feggins Academy is the training arm of Divine Insurance Group. For licensed insurance professional use. Not intended for consumer solicitation. Production figures cited (1,500+ MAPD applications, 1,000+ FE cases, 20 years experience) reflect historical career production of William Feggins and are not a guarantee of attendee results. Compensation, advance percentages, and carrier availability vary by state, license, contract level, and carrier approval. Educational content only — not tax, legal, or financial advice.
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta"><a href="#register" class="btn">Reserve My Free Seat →</a></div>
+
+<script>
+  // COUNTDOWN — target: July 27, 2026 7:00 PM America/New_York = 2026-07-27T23:00:00Z
+  (function(){
+    var target = new Date("2026-07-27T23:00:00Z").getTime();
+    function pad(n){return n<10?"0"+n:n}
+    function tick(){
+      var now = Date.now();
+      var d = Math.max(0, target - now);
+      var days = Math.floor(d/86400000);
+      var hrs  = Math.floor((d%86400000)/3600000);
+      var min  = Math.floor((d%3600000)/60000);
+      var sec  = Math.floor((d%60000)/1000);
+      var el=function(id){return document.getElementById(id)};
+      if(el('cd-d')){el('cd-d').textContent=pad(days);el('cd-h').textContent=pad(hrs);el('cd-m').textContent=pad(min);el('cd-s').textContent=pad(sec)}
+    }
+    tick(); setInterval(tick, 1000);
+  })();
+
+  // Registration handler — currently sends the user to Zoom's registration URL.
+  // TO WIRE INTO GHL: replace the form's action with your GHL Form embed URL,
+  // or replace this JS to POST the fields to your GHL webhook, then redirect to Zoom.
+  function handleRegister(e){
+    // Allow default action (Zoom registration in new tab).
+    // If you want in-page thank-you flow, uncomment: e.preventDefault();
+    return true;
+  }
+
+  // Broker Income Calculator — dual persona (Senior / Family)
+  (function(){
+    var $=function(id){return document.getElementById(id)};
+    var lvl='street';
+    var persona='senior';
+    // Commission rates by contract tier for each product line
+    var rates={
+      street:{fe:1.00, iul:0.90, hi:0.25, cn:0.25},
+      mid:   {fe:1.15, iul:1.05, hi:0.40, cn:0.40},
+      top:   {fe:1.30, iul:1.25, hi:0.55, cn:0.55}
+    };
+    function fmt(n){return '$'+Math.round(n).toLocaleString('en-US')}
+    function val(id,fallback){var e=$(id);return e?(parseFloat(e.value)||fallback||0):(fallback||0)}
+
+    function calc(){
+      var state=val('c-state',725);
+      var mapd=Math.round(val('c-mapd',0));
+      var pdp=Math.round(val('c-pdp',0));
+      var fe=Math.round(val('c-fe',0));
+      var fePrem=Math.round(val('c-fe-prem',0));
+      var hi=Math.round(val('c-hi',0));
+      var hiPrem=Math.round(val('c-hi-prem',0));
+      var cn=Math.round(val('c-cn',0));
+      var cnPrem=Math.round(val('c-cn-prem',0));
+      var iul=Math.round(val('c-iul',0));
+      var iulPrem=Math.round(val('c-iul-prem',0));
+      var fex=Math.round(val('c-fex',0));
+      var fexPrem=Math.round(val('c-fex-prem',0));
+
+      // Update value displays
+      var setTxt=function(id,v){var e=$(id);if(e)e.textContent=v};
+      setTxt('c-mapd-v',mapd);
+      setTxt('c-pdp-v',pdp);
+      setTxt('c-fe-v',fe);
+      setTxt('c-fe-prem-v','$'+fePrem);
+      setTxt('c-hi-v',hi);
+      setTxt('c-hi-prem-v','$'+hiPrem);
+      setTxt('c-cn-v',cn);
+      setTxt('c-cn-prem-v','$'+cnPrem);
+      setTxt('c-iul-v',iul);
+      setTxt('c-iul-prem-v','$'+iulPrem.toLocaleString('en-US'));
+      setTxt('c-fex-v',fex);
+      setTxt('c-fex-prem-v','$'+fexPrem);
+
+      var r=rates[lvl];
+      var mapdAnnual = mapd * 12 * state;
+      var pdpAnnual  = pdp * 12 * 130;
+      var feAnnPrem  = fePrem * 12;
+      var feAnnual   = fe * 12 * feAnnPrem * r.fe;
+
+      // Senior-only
+      var hiAnnPrem = hiPrem * 12;
+      var hiAnnual  = hi * 12 * hiAnnPrem * r.hi;
+      var cnAnnPrem = cnPrem * 12;
+      var cnAnnual  = cn * 12 * cnAnnPrem * r.cn;
+
+      // Family-only
+      var iulAnnual = iul * 12 * iulPrem * r.iul;
+      var fexAnnPrem= fexPrem * 12;
+      var fexAnnual = fex * 12 * fexAnnPrem * r.fe; // adult-child FE uses same FE rate
+
+      var total, hhTotal, hhCount, hhLabel;
+      if(persona==='senior'){
+        total = mapdAnnual + pdpAnnual + feAnnual + hiAnnual + cnAnnual;
+        // Household count: use mapd as household anchor if > 0, else fe
+        hhCount = mapd || fe || 1;
+        hhTotal = (mapd*state) + (mapd>0?(cn?cnAnnPrem*r.cn:0):0);
+        // Better per-household: total / (12 * mapd) for MAPD-anchored households; if no MAPD, use FE
+        var monthlyHouseholds = mapd>0 ? mapd : (fe>0 ? fe : 1);
+        hhTotal = total / (monthlyHouseholds * 12);
+        hhLabel = 'Senior client: MAPD + FE + Hospital Indemnity + Cancer';
+      } else {
+        total = mapdAnnual + pdpAnnual + feAnnual + iulAnnual + fexAnnual;
+        var monthlyHH = mapd>0 ? mapd : (iul>0 ? iul : 1);
+        hhTotal = total / (monthlyHH * 12);
+        hhLabel = 'Family cross-sell: MAPD + FE + IUL + adult-child FE';
+      }
+
+      // Renewals (Yr 2+)
+      var renewMAPD = mapd * 12 * (state/2);
+      var renewFE   = fe * 12 * feAnnPrem * 0.05;
+      var renewHI   = hi * 12 * hiAnnPrem * 0.06;
+      var renewCN   = cn * 12 * cnAnnPrem * 0.05;
+      var renewIUL  = iul * 12 * iulPrem * 0.03;
+      var renewFEX  = fex * 12 * fexAnnPrem * 0.05;
+      var renew = renewMAPD + renewFE + (persona==='senior' ? renewHI+renewCN : renewIUL+renewFEX);
+
+      setTxt('c-out-mapd',fmt(mapdAnnual));
+      setTxt('c-out-pdp', fmt(pdpAnnual));
+      setTxt('c-out-fe',  fmt(feAnnual));
+      setTxt('c-out-hi',  fmt(hiAnnual));
+      setTxt('c-out-cn',  fmt(cnAnnual));
+      setTxt('c-out-iul', fmt(iulAnnual));
+      setTxt('c-out-fex', fmt(fexAnnual));
+      setTxt('c-out-renew',fmt(renew));
+      setTxt('c-total',   fmt(total));
+      setTxt('c-monthly', '≈ '+fmt(total/12)+' / month first-year commissions');
+      setTxt('c-hh-total',fmt(hhTotal));
+      setTxt('c-hh-label',hhLabel);
+
+      var loa = total * 0.60;
+      setTxt('c-vs-loa', fmt(loa));
+      setTxt('c-vs-delta', fmt(total - loa));
+    }
+
+    function switchPersona(p){
+      persona=p;
+      document.querySelectorAll('.persona-tabs button').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-persona')===p)});
+      $('senior-group').style.display = (p==='senior')?'':'none';
+      $('family-group').style.display = (p==='family')?'':'none';
+      document.querySelectorAll('.senior-only').forEach(function(el){el.style.display=(p==='senior')?'':'none'});
+      document.querySelectorAll('.family-only').forEach(function(el){el.style.display=(p==='family')?'':'none'});
+      calc();
+    }
+
+    ['c-state','c-mapd','c-pdp','c-fe','c-fe-prem','c-hi','c-hi-prem','c-cn','c-cn-prem','c-iul','c-iul-prem','c-fex','c-fex-prem'].forEach(function(id){
+      var el=$(id); if(el){ el.addEventListener('input',calc); el.addEventListener('change',calc); }
+    });
+    document.querySelectorAll('.contract-slider button').forEach(function(b){
+      b.addEventListener('click',function(){
+        document.querySelectorAll('.contract-slider button').forEach(function(x){x.classList.remove('active')});
+        b.classList.add('active');
+        lvl=b.getAttribute('data-lvl');
+        calc();
+      });
+    });
+    document.querySelectorAll('.persona-tabs button').forEach(function(b){
+      b.addEventListener('click',function(){switchPersona(b.getAttribute('data-persona'))});
+    });
+    calc();
+  })();
+
+  // Smooth-scroll for anchor buttons
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(ev){
+      var id = this.getAttribute('href');
+      if(id.length>1){
+        var t = document.querySelector(id);
+        if(t){ ev.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
