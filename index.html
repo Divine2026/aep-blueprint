@@ -133,7 +133,7 @@
   .vitem .meta b{display:block;color:#fff;margin-top:6px;font-family:'Anton';letter-spacing:.03em;font-size:18px;text-transform:uppercase}
 
   /* TABLE */
-  table.agenda{width:100%;min-width:520px;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  table.agenda{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
   table.agenda th, table.agenda td{padding:16px 18px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
   table.agenda th{background:#101115;font-family:'Anton';color:var(--orange);letter-spacing:.1em;text-transform:uppercase;font-size:13px;font-weight:400}
   table.agenda tr:last-child td{border-bottom:0}
@@ -199,6 +199,49 @@
     .sticky-cta{display:block}
     body{padding-bottom:76px}
   }
+  /* Mobile-only: transform tables into card-stacks so nothing overflows */
+  @media (max-width: 720px){
+    /* Hide table headers (visually), keep for screen readers */
+    table.agenda thead, table.cms thead, table.fe thead{
+      position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden
+    }
+    /* Reset table display so each row stacks like a card */
+    table.agenda, table.cms, table.fe{display:block;background:transparent;border:0;box-shadow:none}
+    table.agenda tbody, table.cms tbody, table.fe tbody{display:block}
+    table.agenda tr, table.cms tr, table.fe tr{
+      display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:12px
+    }
+    table.agenda tr.hilite, table.cms tr.hilite, table.fe tr.divine-row{
+      border-color:rgba(242,103,34,.5);background:linear-gradient(160deg,rgba(242,103,34,.06),rgba(11,11,12,1))
+    }
+    table.agenda td, table.cms td, table.fe td{
+      display:block;border:0;padding:6px 0;text-align:left
+    }
+    /* Label chip generated from data-label attr */
+    table.agenda td::before, table.cms td::before, table.fe td::before{
+      content: attr(data-label);
+      display:block;
+      font-family:'Anton',Impact,sans-serif;
+      color:var(--orange);
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-size:10px;
+      margin-bottom:3px;
+      font-weight:400
+    }
+    table.agenda td.num, table.fe td.pct, table.cms td.num{
+      font-size:22px;color:#fff
+    }
+    table.fe td.pct.divine{color:var(--orange)}
+    table.fe td.pct.captive{color:#EF4444}
+    /* Hide standalone tag chips (they'd duplicate labels) */
+    table.fe td:first-child{
+      padding-bottom:10px;
+      border-bottom:1px solid rgba(255,255,255,.06);
+      margin-bottom:6px
+    }
+  }
+
   @media (max-width: 620px){
     .g-2, .g-3, .g-4, .strip, .vgrid, .stats, .checks{grid-template-columns:1fr}
     .hero{padding-top:56px}
@@ -235,7 +278,7 @@
   .warn .icon{flex:0 0 44px;height:44px;border-radius:50%;background:rgba(239,68,68,.15);color:#EF4444;display:grid;place-items:center;font-family:'Anton';font-size:22px}
   .warn b{color:#fff;font-family:'Anton';letter-spacing:.05em;font-size:20px;text-transform:uppercase;display:block;margin-bottom:6px}
   .warn p{margin:0;color:#E3E5EA}
-  table.cms{width:100%;min-width:520px;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:0}
+  table.cms{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:0}
   table.cms th, table.cms td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}
   table.cms th{background:#101115;font-family:'Anton';color:var(--orange);letter-spacing:.1em;text-transform:uppercase;font-size:12px;font-weight:400}
   table.cms td.num{font-family:'Anton';color:#fff;font-size:22px;letter-spacing:.02em}
@@ -285,10 +328,8 @@
   .household-total .val{font-family:'Anton';color:#fff;font-size:34px;letter-spacing:.02em}
 
   /* FE/IUL Transparency Grid */
-  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:14px;border-radius:14px;position:relative}
-  .table-scroll::after{content:"";position:absolute;top:0;right:0;bottom:0;width:24px;background:linear-gradient(to right,transparent,rgba(11,11,12,.9));pointer-events:none;border-radius:0 14px 14px 0}
-  @media (min-width:721px){.table-scroll::after{display:none}}
-  table.fe{width:100%;min-width:640px;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:0}
+  .table-scroll{margin-bottom:14px;border-radius:14px;position:relative}
+  table.fe{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:0}
   table.fe th, table.fe td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
   table.fe th{background:#101115;font-family:'Anton';color:var(--orange);letter-spacing:.1em;text-transform:uppercase;font-size:12px;font-weight:400}
   table.fe td.pct{font-family:'Anton';color:#fff;font-size:20px;letter-spacing:.02em;white-space:nowrap}
@@ -430,13 +471,13 @@
         <tr><th style="width:80px">#</th><th>Segment</th><th>What You Walk Away With</th></tr>
       </thead>
       <tbody>
-        <tr><td class="num">01</td><td><b>The 100-App Territory Plan</b></td><td>A weekly, daily, and appointment-level breakdown to write 100+ MAPD apps without burning out or driving 400 miles a week.</td></tr>
-        <tr><td class="num">02</td><td><b>Tools + Lead Programs That Actually Work</b></td><td>The stack we run: built-in CRM, funnels, automation + AI tools, live lead transfers — and what to kill.</td></tr>
-        <tr><td class="num">03</td><td><b>Grassroots Marketing By State</b></td><td>Community events, senior tables, church partnerships, and educational workshops. Win locally without wasting time.</td></tr>
-        <tr><td class="num">04</td><td><b>Contracts &amp; Ownership</b></td><td>Direct-to-carrier vs LOA. Street-level MA commissions. GA / MGA / SGA management contracts. Read the actual grid.</td></tr>
-        <tr><td class="num">05</td><td><b>Cross-Sell Final Expense &amp; IUL</b></td><td>How to properly bolt on Final Expense and IUL to every MAPD client — and why Transamerica's Funeral Concierge (included Will + POA) closes cold prospects.</td></tr>
-        <tr><td class="num">06</td><td><b>The Blueprint Timeline</b></td><td>Months-in-advance action plan so you show up to AEP with a system, not confusion.</td></tr>
-        <tr><td class="num">07</td><td><b>Live Q&amp;A with Bill</b></td><td>Bring your contract questions, your production goals, your state, your carriers. Real numbers, no pitch.</td></tr>
+        <tr><td data-label="#" class="num">01</td><td data-label="Segment"><b>The 100-App Territory Plan</b></td><td data-label="What You Walk Away With">A weekly, daily, and appointment-level breakdown to write 100+ MAPD apps without burning out or driving 400 miles a week.</td></tr>
+        <tr><td data-label="#" class="num">02</td><td data-label="Segment"><b>Tools + Lead Programs That Actually Work</b></td><td data-label="What You Walk Away With">The stack we run: built-in CRM, funnels, automation + AI tools, live lead transfers — and what to kill.</td></tr>
+        <tr><td data-label="#" class="num">03</td><td data-label="Segment"><b>Grassroots Marketing By State</b></td><td data-label="What You Walk Away With">Community events, senior tables, church partnerships, and educational workshops. Win locally without wasting time.</td></tr>
+        <tr><td data-label="#" class="num">04</td><td data-label="Segment"><b>Contracts &amp; Ownership</b></td><td data-label="What You Walk Away With">Direct-to-carrier vs LOA. Street-level MA commissions. GA / MGA / SGA management contracts. Read the actual grid.</td></tr>
+        <tr><td data-label="#" class="num">05</td><td data-label="Segment"><b>Cross-Sell Final Expense &amp; IUL</b></td><td data-label="What You Walk Away With">How to properly bolt on Final Expense and IUL to every MAPD client — and why Transamerica's Funeral Concierge (included Will + POA) closes cold prospects.</td></tr>
+        <tr><td data-label="#" class="num">06</td><td data-label="Segment"><b>The Blueprint Timeline</b></td><td data-label="What You Walk Away With">Months-in-advance action plan so you show up to AEP with a system, not confusion.</td></tr>
+        <tr><td data-label="#" class="num">07</td><td data-label="Segment"><b>Live Q&amp;A with Bill</b></td><td data-label="What You Walk Away With">Bring your contract questions, your production goals, your state, your carriers. Real numbers, no pitch.</td></tr>
       </tbody>
     </table></div>
   </div>
@@ -542,11 +583,11 @@
         <tr><th>Product / Region</th><th>Initial Enrollment</th><th>Renewal</th><th>Change vs 2026</th></tr>
       </thead>
       <tbody>
-        <tr class="hilite"><td><b style="color:#fff">Medicare Advantage — Pennsylvania (Philly)</b></td><td class="num">$816</td><td class="num">$408</td><td class="diff">+4.5%</td></tr>
-        <tr><td><b style="color:#fff">Medicare Advantage — National Baseline</b></td><td class="num">$725</td><td class="num">$363</td><td class="diff">Baseline</td></tr>
-        <tr><td><b style="color:#fff">Prescription Drug Plans (PDP)</b></td><td class="num">$130</td><td class="num">$65</td><td class="diff">+14%</td></tr>
-        <tr><td><b style="color:#fff">Referral Fees — MA Plans</b></td><td class="num">$100</td><td class="num">—</td><td class="diff">Held</td></tr>
-        <tr><td><b style="color:#fff">Referral Fees — PDP</b></td><td class="num">$25</td><td class="num">—</td><td class="diff">Held</td></tr>
+        <tr class="hilite"><td data-label="Product / Region"><b style="color:#fff">Medicare Advantage — Pennsylvania (Philly)</b></td><td data-label="Initial Enrollment" class="num">$816</td><td data-label="Renewal" class="num">$408</td><td data-label="Change vs 2026" class="diff">+4.5%</td></tr>
+        <tr><td data-label="Product / Region"><b style="color:#fff">Medicare Advantage — National Baseline</b></td><td data-label="Initial Enrollment" class="num">$725</td><td data-label="Renewal" class="num">$363</td><td data-label="Change vs 2026" class="diff">Baseline</td></tr>
+        <tr><td data-label="Product / Region"><b style="color:#fff">Prescription Drug Plans (PDP)</b></td><td data-label="Initial Enrollment" class="num">$130</td><td data-label="Renewal" class="num">$65</td><td data-label="Change vs 2026" class="diff">+14%</td></tr>
+        <tr><td data-label="Product / Region"><b style="color:#fff">Referral Fees — MA Plans</b></td><td data-label="Initial Enrollment" class="num">$100</td><td data-label="Renewal" class="num">—</td><td data-label="Change vs 2026" class="diff">Held</td></tr>
+        <tr><td data-label="Product / Region"><b style="color:#fff">Referral Fees — PDP</b></td><td data-label="Initial Enrollment" class="num">$25</td><td data-label="Renewal" class="num">—</td><td data-label="Change vs 2026" class="diff">Held</td></tr>
       </tbody>
     </table></div>
 
@@ -757,11 +798,11 @@
         <tr><th>Contract Type</th><th>First-Year Commission</th><th>Renewal (Yrs 2–10)</th><th>Advance</th><th>You Own The Book?</th></tr>
       </thead>
       <tbody>
-        <tr><td><span class="tag c">Captive / Agency</span> New-agent contract</td><td class="pct captive">60–80%</td><td>2–5%</td><td>Varies</td><td>No — the agency does</td></tr>
-        <tr><td><span class="tag s">Street Level</span> Direct with carrier, no proof of production</td><td class="pct">80–110%</td><td>3–6%</td><td>9-month typical</td><td>Yes — direct-to-carrier</td></tr>
-        <tr><td><span class="tag s">Typical IMO / FMO</span> Independent producer with an IMO</td><td class="pct">100–120%</td><td>5–8%</td><td>9-month typical</td><td>Usually, if contract says so</td></tr>
-        <tr class="divine-row"><td><span class="tag d">Divine Insurance Group</span> Broker-direct-to-carrier</td><td class="pct divine">90–145%</td><td>Full carrier schedule</td><td class="pct divine" style="font-size:14px">9-month advance</td><td>YES — in writing</td></tr>
-        <tr><td><span class="tag s">Top-Producer / Negotiated</span> Rare, requires 15+ policies/wk</td><td class="pct">115–130%</td><td>7–10%</td><td>9-mo (75% advance rate typical)</td><td>Yes</td></tr>
+        <tr><td data-label="Contract Type"><span class="tag c">Captive / Agency</span> New-agent contract</td><td data-label="First-Year Commission" class="pct captive">60–80%</td><td data-label="Renewal (Yrs 2–10)">2–5%</td><td data-label="Advance">Varies</td><td data-label="You Own The Book?">No — the agency does</td></tr>
+        <tr><td data-label="Contract Type"><span class="tag s">Street Level</span> Direct with carrier, no proof of production</td><td data-label="First-Year Commission" class="pct">80–110%</td><td data-label="Renewal (Yrs 2–10)">3–6%</td><td data-label="Advance">9-month typical</td><td data-label="You Own The Book?">Yes — direct-to-carrier</td></tr>
+        <tr><td data-label="Contract Type"><span class="tag s">Typical IMO / FMO</span> Independent producer with an IMO</td><td data-label="First-Year Commission" class="pct">100–120%</td><td data-label="Renewal (Yrs 2–10)">5–8%</td><td data-label="Advance">9-month typical</td><td data-label="You Own The Book?">Usually, if contract says so</td></tr>
+        <tr class="divine-row"><td data-label="Contract Type"><span class="tag d">Divine Insurance Group</span> Broker-direct-to-carrier</td><td data-label="First-Year Commission" class="pct divine">90–145%</td><td data-label="Renewal (Yrs 2–10)">Full carrier schedule</td><td data-label="Advance" class="pct divine" style="font-size:14px">9-month advance</td><td data-label="You Own The Book?">YES — in writing</td></tr>
+        <tr><td data-label="Contract Type"><span class="tag s">Top-Producer / Negotiated</span> Rare, requires 15+ policies/wk</td><td data-label="First-Year Commission" class="pct">115–130%</td><td data-label="Renewal (Yrs 2–10)">7–10%</td><td data-label="Advance">9-mo (75% advance rate typical)</td><td data-label="You Own The Book?">Yes</td></tr>
       </tbody>
     </table></div>
 
@@ -771,13 +812,13 @@
         <tr><th>Carrier / Product</th><th>Street</th><th>Divine Broker Pays Up To</th><th>Renewals</th></tr>
       </thead>
       <tbody>
-        <tr class="divine-row"><td><b style="color:#fff">Transamerica FE Express Solution</b> (Bill's specialty)</td><td class="pct">110%</td><td class="pct divine">Up to 145%</td><td>2.75% yrs 2–5 / 1.75% yrs 6–10</td></tr>
-        <tr><td><b style="color:#fff">Mutual of Omaha</b> Living Promise</td><td class="pct">120%</td><td class="pct divine">Contract to street</td><td>~5%</td></tr>
-        <tr><td><b style="color:#fff">Aetna / ACI-CLI</b> Final Expense</td><td class="pct">130%</td><td class="pct divine">Contract to street</td><td>~7–12%</td></tr>
-        <tr><td><b style="color:#fff">Foresters</b> PlanRight</td><td class="pct">135%</td><td class="pct divine">Contract to street</td><td>~8.25%</td></tr>
-        <tr><td><b style="color:#fff">American Amicable</b> Home Protector</td><td class="pct">130%</td><td class="pct divine">Contract to street</td><td>~8.5%</td></tr>
-        <tr><td><b style="color:#fff">SBLI</b> Living Legacy</td><td class="pct">130%</td><td class="pct divine">Contract to street</td><td>~7.75%</td></tr>
-        <tr><td><b style="color:#fff">Royal Neighbors</b> Level FE</td><td class="pct">120%</td><td class="pct divine">Contract to street</td><td>~7.25%</td></tr>
+        <tr class="divine-row"><td data-label="Carrier / Product"><b style="color:#fff">Transamerica FE Express Solution</b> (Bill's specialty)</td><td data-label="Street" class="pct">110%</td><td data-label="Divine Broker Pays Up To" class="pct divine">Up to 145%</td><td data-label="Renewals">2.75% yrs 2–5 / 1.75% yrs 6–10</td></tr>
+        <tr><td data-label="Carrier / Product"><b style="color:#fff">Mutual of Omaha</b> Living Promise</td><td data-label="Street" class="pct">120%</td><td data-label="Divine Broker Pays Up To" class="pct divine">Contract to street</td><td data-label="Renewals">~5%</td></tr>
+        <tr><td data-label="Carrier / Product"><b style="color:#fff">Aetna / ACI-CLI</b> Final Expense</td><td data-label="Street" class="pct">130%</td><td data-label="Divine Broker Pays Up To" class="pct divine">Contract to street</td><td data-label="Renewals">~7–12%</td></tr>
+        <tr><td data-label="Carrier / Product"><b style="color:#fff">Foresters</b> PlanRight</td><td data-label="Street" class="pct">135%</td><td data-label="Divine Broker Pays Up To" class="pct divine">Contract to street</td><td data-label="Renewals">~8.25%</td></tr>
+        <tr><td data-label="Carrier / Product"><b style="color:#fff">American Amicable</b> Home Protector</td><td data-label="Street" class="pct">130%</td><td data-label="Divine Broker Pays Up To" class="pct divine">Contract to street</td><td data-label="Renewals">~8.5%</td></tr>
+        <tr><td data-label="Carrier / Product"><b style="color:#fff">SBLI</b> Living Legacy</td><td data-label="Street" class="pct">130%</td><td data-label="Divine Broker Pays Up To" class="pct divine">Contract to street</td><td data-label="Renewals">~7.75%</td></tr>
+        <tr><td data-label="Carrier / Product"><b style="color:#fff">Royal Neighbors</b> Level FE</td><td data-label="Street" class="pct">120%</td><td data-label="Divine Broker Pays Up To" class="pct divine">Contract to street</td><td data-label="Renewals">~7.25%</td></tr>
       </tbody>
     </table></div>
     <p class="src" style="margin-bottom:26px">
@@ -797,10 +838,10 @@
         <tr><th>Product</th><th>Avg Client Premium</th><th>First-Year Commission</th><th>Per-Sale Comp (est.)</th></tr>
       </thead>
       <tbody>
-        <tr class="divine-row"><td><b style="color:#fff">Hospital Indemnity (Medicare pairing)</b> — Mutual of Omaha, Aetna, GTL, Manhattan Life, Cigna</td><td>$30–$75 / mo</td><td class="pct divine">25–55% FYC (heaped)</td><td class="pct divine">$150–$400</td></tr>
-        <tr><td><b style="color:#fff">Cancer / Critical Illness</b> — Cigna Flex Choice, Aflac, Continental American</td><td>$15–$40 / mo</td><td class="pct divine">40–60% FYC</td><td class="pct divine">$100–$300</td></tr>
-        <tr><td><b style="color:#fff">Accident</b> — Voluntary worksite/senior</td><td>$10–$30 / mo</td><td class="pct">35–60% FYC</td><td class="pct">$50–$200</td></tr>
-        <tr><td><b style="color:#fff">Dental / Vision / Hearing (DVH)</b></td><td>$20–$45 / mo</td><td class="pct">20–35% FYC</td><td class="pct">$50–$150</td></tr>
+        <tr class="divine-row"><td data-label="Product"><b style="color:#fff">Hospital Indemnity (Medicare pairing)</b> — Mutual of Omaha, Aetna, GTL, Manhattan Life, Cigna</td><td data-label="Avg Client Premium">$30–$75 / mo</td><td data-label="First-Year Commission" class="pct divine">25–55% FYC (heaped)</td><td data-label="Per-Sale Comp (est.)" class="pct divine">$150–$400</td></tr>
+        <tr><td data-label="Product"><b style="color:#fff">Cancer / Critical Illness</b> — Cigna Flex Choice, Aflac, Continental American</td><td data-label="Avg Client Premium">$15–$40 / mo</td><td data-label="First-Year Commission" class="pct divine">40–60% FYC</td><td data-label="Per-Sale Comp (est.)" class="pct divine">$100–$300</td></tr>
+        <tr><td data-label="Product"><b style="color:#fff">Accident</b> — Voluntary worksite/senior</td><td data-label="Avg Client Premium">$10–$30 / mo</td><td data-label="First-Year Commission" class="pct">35–60% FYC</td><td data-label="Per-Sale Comp (est.)" class="pct">$50–$200</td></tr>
+        <tr><td data-label="Product"><b style="color:#fff">Dental / Vision / Hearing (DVH)</b></td><td data-label="Avg Client Premium">$20–$45 / mo</td><td data-label="First-Year Commission" class="pct">20–35% FYC</td><td data-label="Per-Sale Comp (est.)" class="pct">$50–$150</td></tr>
       </tbody>
     </table></div>
     <p class="src" style="margin-bottom:26px">
@@ -819,10 +860,10 @@
         <tr><th>Contract Type</th><th>Target Premium Commission</th><th>Excess Premium</th><th>Notes</th></tr>
       </thead>
       <tbody>
-        <tr><td><span class="tag c">Captive / Career Shop</span></td><td class="pct captive">40–65%</td><td>2–5%</td><td>One shelf. Product mandated. Overrides go up.</td></tr>
-        <tr><td><span class="tag s">Typical IUL IMO</span></td><td class="pct">70–95%</td><td>3–5%</td><td>Better, but often exclusivity or minimums.</td></tr>
-        <tr class="divine-row"><td><span class="tag d">Divine Insurance Group</span> Direct-to-carrier IUL</td><td class="pct divine">80–130%</td><td class="pct divine" style="font-size:14px">3–5%+</td><td>Full target commission on Transamerica FFIUL II — latest cap 7.25%. Non-exclusive. Keep any existing carrier numbers.</td></tr>
-        <tr><td><span class="tag s">Whole Life / Life 150%</span> Divine legacy contract</td><td class="pct divine">150%</td><td>Carrier schedule</td><td>9-mo advance; final 25% paid months 10–12.</td></tr>
+        <tr><td data-label="Contract Type"><span class="tag c">Captive / Career Shop</span></td><td data-label="Target Premium Commission" class="pct captive">40–65%</td><td data-label="Excess Premium">2–5%</td><td data-label="Notes">One shelf. Product mandated. Overrides go up.</td></tr>
+        <tr><td data-label="Contract Type"><span class="tag s">Typical IUL IMO</span></td><td data-label="Target Premium Commission" class="pct">70–95%</td><td data-label="Excess Premium">3–5%</td><td data-label="Notes">Better, but often exclusivity or minimums.</td></tr>
+        <tr class="divine-row"><td data-label="Contract Type"><span class="tag d">Divine Insurance Group</span> Direct-to-carrier IUL</td><td data-label="Target Premium Commission" class="pct divine">80–130%</td><td data-label="Excess Premium" class="pct divine" style="font-size:14px">3–5%+</td><td data-label="Notes">Full target commission on Transamerica FFIUL II — latest cap 7.25%. Non-exclusive. Keep any existing carrier numbers.</td></tr>
+        <tr><td data-label="Contract Type"><span class="tag s">Whole Life / Life 150%</span> Divine legacy contract</td><td data-label="Target Premium Commission" class="pct divine">150%</td><td data-label="Excess Premium">Carrier schedule</td><td data-label="Notes">9-mo advance; final 25% paid months 10–12.</td></tr>
       </tbody>
     </table></div>
 
