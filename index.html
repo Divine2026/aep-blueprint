@@ -68,9 +68,10 @@
     radial-gradient(900px 400px at 100% 0%, rgba(233,178,76,.10), transparent 60%),
     linear-gradient(#0B0B0C,#0B0B0C)}
   .hero .stripe{position:absolute;inset:auto 0 0 0;height:6px;background:linear-gradient(90deg,var(--orange),#B54415,var(--gold),var(--orange));opacity:.7}
-  .hero-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center;max-width:920px;margin:0 auto;text-align:center}
-  .hero-grid .badges, .hero-grid .cta-row{justify-content:center}
-  .hero-grid .meta{justify-content:center}
+  .hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;text-align:left}
+  .hero-grid .badges, .hero-grid .cta-row{justify-content:flex-start}
+  .hero-grid .meta{justify-content:flex-start}
+  @media (max-width: 900px){.hero-grid{grid-template-columns:1fr;gap:32px;text-align:center;max-width:920px;margin:0 auto}.hero-grid .badges,.hero-grid .cta-row,.hero-grid .meta{justify-content:center}}
   .hero .badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px}
   .hero h1 span{color:var(--orange)}
   .hero .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;align-items:center}
@@ -390,7 +391,7 @@
       <p class="lead">This past AEP flipped the game — plans changed, benefits shifted, and most agents got caught winging it. Our brokers had their <b>most successful AEP ever</b> because we didn't wing anything. Real strategy. Real tools. A territory-based blueprint months in advance. Come see the exact playbook.</p>
 
       <div class="badges">
-        <span class="kicker"><span class="dot"></span> Monday · July 27, 2026</span>
+        <span class="kicker"><span class="dot"></span> Monday · August 10, 2026</span>
         <span class="kicker"><span class="dot"></span> 7:00 PM ET · 60 Minutes</span>
         <span class="kicker"><span class="dot"></span> Live on Zoom · Replay Available</span>
       </div>
@@ -404,7 +405,7 @@
 
       <div class="cta-row">
         <a href="#register" class="btn">Reserve My Seat</a>
-        <a href="https://www.eventbrite.com/e/the-aep-blueprint-bill-feggins-academy-broker-masterclass-tickets-1994513305989" target="_blank" rel="noopener" class="btn ghost">Register on Eventbrite</a>
+        <a href="https://www.eventbrite.com/e/the-aep-blueprint-bill-feggins-academy-broker-masterclass-tickets-1995817300271" target="_blank" rel="noopener" class="btn ghost">Register on Eventbrite</a>
       </div>
 
       <div class="meta">
@@ -414,7 +415,16 @@
       </div>
     </div>
 
-<!-- Hero video placeholder — Bill will provide the new video and I'll drop it in here -->
+    <!-- Hero video — proof, not talk -->
+    <div class="video-card">
+      <div class="thumb">
+        <iframe src="https://www.youtube.com/embed/JTCtXe8_OwQ?rel=0&modestbranding=1" title="Divine Insurance Group - Medicare Opportunity" loading="lazy" allowfullscreen></iframe>
+      </div>
+      <div class="caption">
+        <small>See What We Do · Receipts Not Talk</small>
+        <a href="https://www.youtube.com/@divineinsurancegroup" target="_blank" rel="noopener" style="font-size:12px;color:var(--orange);text-transform:uppercase;letter-spacing:.1em;font-family:'Anton'">More →</a>
+      </div>
+    </div>
   </div>
   <div class="stripe"></div>
 </section>
@@ -939,11 +949,11 @@
   <div class="container">
     <div class="form-wrap">
       <span class="eyebrow" style="display:block;text-align:center">Reserve Your Seat</span>
-      <h2>Reserve My Spot — July 27, 7 PM ET</h2>
+      <h2>Reserve My Spot — August 10, 7 PM ET</h2>
       <p class="small">No cost to attend. Registration required. Replay sent to registrants only.</p>
 
       <!-- Replace this form action with your GHL form embed. See instructions below. -->
-      <form id="regform" action="https://www.eventbrite.com/e/the-aep-blueprint-bill-feggins-academy-broker-masterclass-tickets-1994513305989" method="get" target="_blank" onsubmit="return handleRegister(event)">
+      <form id="regform" action="https://www.eventbrite.com/e/the-aep-blueprint-bill-feggins-academy-broker-masterclass-tickets-1995817300271" method="get" target="_blank" onsubmit="return handleRegister(event)">
         <div class="row">
           <div class="field"><label for="fn">First Name*</label><input required id="fn" name="first_name" type="text" placeholder="First"></div>
           <div class="field"><label for="ln">Last Name*</label><input required id="ln" name="last_name" type="text" placeholder="Last"></div>
@@ -1048,9 +1058,9 @@
 <div class="sticky-cta"><a href="#register" class="btn">Reserve My Seat →</a></div>
 
 <script>
-  // COUNTDOWN — target: July 27, 2026 7:00 PM America/New_York = 2026-07-27T23:00:00Z
+  // COUNTDOWN — target: August 10, 2026 7:00 PM America/New_York = 2026-08-10T23:00:00Z
   (function(){
-    var target = new Date("2026-07-27T23:00:00Z").getTime();
+    var target = new Date("2026-08-10T23:00:00Z").getTime();
     function pad(n){return n<10?"0"+n:n}
     function tick(){
       var now = Date.now();
